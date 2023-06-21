@@ -1,0 +1,70 @@
+{
+  "itemId" : "_OTAx2gkfEe6zGuVe_Ilm8A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_9fLrIEy5EeqTsqitMXy6Ug",
+    "parameterList" : [ {
+      "id" : "__hn25dqrEey8aMRPcCnrrw",
+      "name" : "emailFrom"
+    }, {
+      "id" : "__hn25tqrEey8aMRPcCnrrw",
+      "name" : "emailTo"
+    }, {
+      "id" : "__hn249qrEey8aMRPcCnrrw",
+      "name" : "password"
+    }, {
+      "id" : "__hn24dqrEey8aMRPcCnrrw",
+      "name" : "smtpHost"
+    }, {
+      "id" : "__hn25NqrEey8aMRPcCnrrw",
+      "name" : "smtpPort"
+    }, {
+      "id" : "__hn24tqrEey8aMRPcCnrrw",
+      "name" : "username"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_9fLrIEy5EeqTsqitMXy6Ug",
+    "parameterList" : [ {
+      "id" : "_q5rjoWqJEeqh248GgYX-YA",
+      "name" : "smtpHost"
+    }, {
+      "id" : "_q5rjomqJEeqh248GgYX-YA",
+      "name" : "username"
+    }, {
+      "id" : "_q5rjo2qJEeqh248GgYX-YA",
+      "name" : "password"
+    }, {
+      "id" : "_q5rjpGqJEeqh248GgYX-YA",
+      "name" : "smtpPort"
+    }, {
+      "id" : "_q5rjpWqJEeqh248GgYX-YA",
+      "name" : "emailFrom"
+    }, {
+      "id" : "_q5rjpmqJEeqh248GgYX-YA",
+      "name" : "emailTo"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_9fLrIEy5EeqTsqitMXy6Ug",
+    "parameterList" : [ {
+      "id" : "_q5rjqGqJEeqh248GgYX-YA",
+      "name" : "smtpHost"
+    }, {
+      "id" : "_q5rjqWqJEeqh248GgYX-YA",
+      "name" : "username"
+    }, {
+      "id" : "_q5rjqmqJEeqh248GgYX-YA",
+      "name" : "password"
+    }, {
+      "id" : "_q5rjq2qJEeqh248GgYX-YA",
+      "name" : "smtpPort"
+    }, {
+      "id" : "_q5rjrGqJEeqh248GgYX-YA",
+      "name" : "emailFrom"
+    }, {
+      "id" : "_q5rjrWqJEeqh248GgYX-YA",
+      "name" : "emailTo"
+    } ]
+  } ]
+}

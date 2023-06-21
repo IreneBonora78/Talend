@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_KG2oEAtIEe6SA7Nx7VOXHA" name="uc3_test" creationDate="2023-06-15T08:45:03.877+0200" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Maria_Db_0.1.item#_qBlYEAnDEe6zGuVe_Ilm8A"/>
+    <taggedValue xmi:id="_KG2oEQtIEe6SA7Nx7VOXHA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_KG2oEgtIEe6SA7Nx7VOXHA" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+    <taggedValue xmi:id="_KG2oEwtIEe6SA7Nx7VOXHA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_KG2oFAtIEe6SA7Nx7VOXHA" tag="Description" value=""/>
+    <taggedValue xmi:id="_KG2oFQtIEe6SA7Nx7VOXHA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_KL2c0QtIEe6SA7Nx7VOXHA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_KL2c0gtIEe6SA7Nx7VOXHA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_KL3D4AtIEe6SA7Nx7VOXHA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_KL5gIAtIEe6SA7Nx7VOXHA" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_KG2oFgtIEe6SA7Nx7VOXHA">
+      <connection href="../../metadata/connections/Maria_Db_0.1.item#_zpgF8AXQEe6tDJLqUzxPXw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+    </context>
+    <results xmi:id="_KG2oFwtIEe6SA7Nx7VOXHA">
+      <resultMetadata xmi:id="_KG2oGAtIEe6SA7Nx7VOXHA"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_KL3D4QtIEe6SA7Nx7VOXHA">
+        <parameters xmi:id="_KL3D4gtIEe6SA7Nx7VOXHA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_KL3D4wtIEe6SA7Nx7VOXHA">
+        <parameters xmi:id="_KL3D5AtIEe6SA7Nx7VOXHA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_KL3D5QtIEe6SA7Nx7VOXHA">
+        <parameters xmi:id="_KL3D5gtIEe6SA7Nx7VOXHA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_KL3D5wtIEe6SA7Nx7VOXHA">
+        <parameters xmi:id="_KL3D6AtIEe6SA7Nx7VOXHA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_KL3D6QtIEe6SA7Nx7VOXHA">
+        <parameters xmi:id="_KL3D6gtIEe6SA7Nx7VOXHA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DefValueCountIndicator" xmi:id="_KL3D6wtIEe6SA7Nx7VOXHA">
+        <parameters xmi:id="_KL3D7AtIEe6SA7Nx7VOXHA"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Maria_Db_0.1.item#_z71XZAtHEe6SA7Nx7VOXHA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Default_Value_Count_0.1.definition#_xnOs8O1MEd2L4a5zyMnylw"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_KG2oGQtIEe6SA7Nx7VOXHA" dataFilter="_KL6HMAtIEe6SA7Nx7VOXHA" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_KL2c0AtIEe6SA7Nx7VOXHA" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_KL6HMAtIEe6SA7Nx7VOXHA" name="uc3_test">
+    <ranges xmi:id="_KL6HMQtIEe6SA7Nx7VOXHA">
+      <expressions xmi:id="_KL6HMgtIEe6SA7Nx7VOXHA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_KL6HMwtIEe6SA7Nx7VOXHA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
