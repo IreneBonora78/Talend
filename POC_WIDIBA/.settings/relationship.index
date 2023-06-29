@@ -135,6 +135,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_HM-YIBaREe6_ofbnm7o0bg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_TadDoBZ7Ee6og_IXNOLUYw",
+    "version" : "Latest",
+    "type" : "rule"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_HsWwQAXREe6tDJLqUzxPXw",
     "version" : "0.1",
     "type" : "job"

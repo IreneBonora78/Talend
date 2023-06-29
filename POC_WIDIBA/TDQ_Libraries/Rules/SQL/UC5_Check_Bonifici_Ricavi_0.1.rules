@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_TaeRwBZ7Ee6og_IXNOLUYw" name="UC5_Check_Bonifici_Ricavi" supplierDependency="_fSArABZ8Ee6og_IXNOLUYw" criticalityLevel="1" whereExpression="delta_perc> 6.3">
+  <dataquality.rules:WhereRule xmi:id="_TaeRwBZ7Ee6og_IXNOLUYw" name="UC5_Check_Bonifici_Ricavi" supplierDependency="_fSArABZ8Ee6og_IXNOLUYw" criticalityLevel="1" whereExpression="delta_perc> 3">
     <taggedValue xmi:id="_TaeRwRZ7Ee6og_IXNOLUYw" tag="Status" value="development"/>
     <taggedValue xmi:id="_TaeRwhZ7Ee6og_IXNOLUYw" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
     <taggedValue xmi:id="_TaeRwxZ7Ee6og_IXNOLUYw" tag="Purpose" value=""/>
