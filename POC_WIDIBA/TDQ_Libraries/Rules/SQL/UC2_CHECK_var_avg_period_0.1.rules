@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_mPFwsRZiEe6og_IXNOLUYw" name="UC2_CHECK_var_avg_period" supplierDependency="_ymQFMBZjEe6og_IXNOLUYw" criticalityLevel="1" whereExpression="var_avg_period>20&#xD;&#xA;or&#xD;&#xA;var_avg_period&lt;-20">
+    <taggedValue xmi:id="_mPFwshZiEe6og_IXNOLUYw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_mPFwsxZiEe6og_IXNOLUYw" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+    <taggedValue xmi:id="_mPFwtBZiEe6og_IXNOLUYw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_mPFwtRZiEe6og_IXNOLUYw" tag="Description" value=""/>
+    <taggedValue xmi:id="_mPFwthZiEe6og_IXNOLUYw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_mPFwtxZiEe6og_IXNOLUYw" tag="Validation_Status" value="true"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_mPFwuBZiEe6og_IXNOLUYw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_ymQFMBZjEe6og_IXNOLUYw" kind="Usage" supplier="_mPFwsRZiEe6og_IXNOLUYw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/UC2_Analysis_var_avg_period_0.1.ana#_iAjeQRZjEe6og_IXNOLUYw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
