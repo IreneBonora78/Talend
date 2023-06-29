@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>process/UC1_AZURE</deletedFolders>
-  <deletedItems id="_M7RdABAVEe6Ru87eRWaZkQ" path="" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_IslyQAkTEe6EWLrEu3tIvg" path="UC1" type="PROCESS"/>
   <deletedItems id="_sJ1SUBA3Ee6FRLa-lK3dQA" path="UC1" type="PROCESS"/>
   <deletedItems id="_5R_bYBA3Ee6FRLa-lK3dQA" path="UC1_AZURE" type="PROCESS"/>

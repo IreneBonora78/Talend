@@ -124,6 +124,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_Ca0vMBZ6Ee6og_IXNOLUYw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M7RdABAVEe6Ru87eRWaZkQ",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_HsWwQAXREe6tDJLqUzxPXw",
     "version" : "0.1",
     "type" : "job"
@@ -244,9 +255,9 @@
     "version" : "Latest",
     "type" : "job"
   }, {
-    "id" : "_Rjsm0ArJEe6N7tCVjRneiQ",
+    "id" : "_M7RdABAVEe6Ru87eRWaZkQ",
     "version" : "Latest",
-    "type" : "rule"
+    "type" : "property"
   } ]
 }, {
   "baseItem" : {

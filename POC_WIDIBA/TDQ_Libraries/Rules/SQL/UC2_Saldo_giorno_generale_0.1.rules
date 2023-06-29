@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_Rjt08ArJEe6N7tCVjRneiQ" name="uc3_saldo_giorno" supplierDependency="_YSrNkAtIEe6SA7Nx7VOXHA" criticalityLevel="1" whereExpression="((delta >=  0.0020) or   (delta &lt;= - 0.0018)) and delta &lt;>100">
+  <dataquality.rules:WhereRule xmi:id="_Rjt08ArJEe6N7tCVjRneiQ" name="UC2_Saldo_giorno_generale" supplierDependency="_YSrNkAtIEe6SA7Nx7VOXHA" criticalityLevel="1" whereExpression="((delta >=  0.0020) or   (delta &lt;= - 0.0018)) and delta &lt;>100">
     <taggedValue xmi:id="_Rjt08QrJEe6N7tCVjRneiQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_Rjt08grJEe6N7tCVjRneiQ" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
     <taggedValue xmi:id="_Rjt08wrJEe6N7tCVjRneiQ" tag="Purpose" value=""/>
@@ -11,6 +11,6 @@
     <sqlGenericExpression xmi:id="_Rjt09wrJEe6N7tCVjRneiQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
   </dataquality.rules:WhereRule>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_YSrNkAtIEe6SA7Nx7VOXHA" kind="Usage" supplier="_Rjt08ArJEe6N7tCVjRneiQ">
-    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/UC3_ANALYZE_SALDO_0.1.ana#_YSp_cAtIEe6SA7Nx7VOXHA"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/UC3_ANALYZE_Saldo_generale_0.1.ana#_YSp_cAtIEe6SA7Nx7VOXHA"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
