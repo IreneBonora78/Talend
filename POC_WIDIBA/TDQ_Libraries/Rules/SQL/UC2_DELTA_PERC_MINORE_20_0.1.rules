@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_UJsOcBWaEe6og_IXNOLUYw" name="UC2_DELTA_PERC_MINORE_20" criticalityLevel="1" whereExpression="delta_perc >20&#xD;&#xA;or&#xD;&#xA;delta_perc &lt;-20">
+  <taggedValue xmi:id="_UJsOcRWaEe6og_IXNOLUYw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_UJsOchWaEe6og_IXNOLUYw" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+  <taggedValue xmi:id="_UJsOcxWaEe6og_IXNOLUYw" tag="Purpose"/>
+  <taggedValue xmi:id="_UJsOdBWaEe6og_IXNOLUYw" tag="Description"/>
+  <taggedValue xmi:id="_UJsOdRWaEe6og_IXNOLUYw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_UJsOdhWaEe6og_IXNOLUYw" tag="Validation_Status" value="true"/>
+  <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+  <sqlGenericExpression xmi:id="_UJsOdxWaEe6og_IXNOLUYw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+</dataquality.rules:WhereRule>

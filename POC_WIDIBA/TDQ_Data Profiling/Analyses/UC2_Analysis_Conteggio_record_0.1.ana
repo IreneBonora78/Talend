@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:dataquality.rules="http://dataquality.rules" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_xkkSQAnMEe6zGuVe_Ilm8A" name="UC2_Analysis_Conteggio_record" creationDate="2023-06-13T11:29:19.960+0200" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Azure_x_Poc_0.1.item#_rHAP8hZkEe6og_IXNOLUYw"/>
+    <clientDependency href="../../TDQ_Libraries/Rules/SQL/UC2_Conteggio_record_orizzontale_0.1.rules#_xkk5UwnMEe6zGuVe_Ilm8A"/>
+    <taggedValue xmi:id="_xkkSQQnMEe6zGuVe_Ilm8A" tag="Status" value="development"/>
+    <taggedValue xmi:id="_xkkSQgnMEe6zGuVe_Ilm8A" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+    <taggedValue xmi:id="_xkkSQwnMEe6zGuVe_Ilm8A" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_xkkSRAnMEe6zGuVe_Ilm8A" tag="Description" value=""/>
+    <taggedValue xmi:id="_xkkSRQnMEe6zGuVe_Ilm8A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_9iwikQnMEe6zGuVe_Ilm8A" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_9iwikgnMEe6zGuVe_Ilm8A" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_xkkSRgnMEe6zGuVe_Ilm8A">
+      <connection href="../../metadata/connections/Azure_x_Poc_0.1.item#_z89v4BAVEe6Ru87eRWaZkQ"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_oUnA8xZkEe6og_IXNOLUYw"/>
+    </context>
+    <results xmi:id="_xkkSRwnMEe6zGuVe_Ilm8A">
+      <resultMetadata xmi:id="_xkkSSAnMEe6zGuVe_Ilm8A" executionDate="2023-06-29T12:08:43.317+0200" executionDuration="602" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="6"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_0CQ6wBZkEe6og_IXNOLUYw" count="59" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_oUnA8xZkEe6og_IXNOLUYw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_010eoBZkEe6og_IXNOLUYw" body="SELECT COUNT(*) FROM &quot;Widiba_Poc&quot;.&quot;dbo&quot;.&quot;UC2&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_01uYABZkEe6og_IXNOLUYw" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_01uYARZkEe6og_IXNOLUYw" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_01uYAhZkEe6og_IXNOLUYw" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_01uYAxZkEe6og_IXNOLUYw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_6Wob0BZkEe6og_IXNOLUYw" count="59" computed="true" userCount="1">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_oUnA8xZkEe6og_IXNOLUYw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/UC2_Conteggio_record_orizzontale_0.1.rules#_3fbZEAnKEe6zGuVe_Ilm8A"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_7Y8NYBZkEe6og_IXNOLUYw" body="SELECT COUNT(*) FROM &quot;Widiba_Poc&quot;.&quot;dbo&quot;.&quot;UC2&quot;   WHERE (q_recs=0)" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_7Y5KEBZkEe6og_IXNOLUYw" name="UC2_Conteggio_record_orizzontale" criticalityLevel="1" whereExpression="q_recs=0">
+          <taggedValue xmi:id="_7Y5KERZkEe6og_IXNOLUYw" tag="Status" value="development"/>
+          <taggedValue xmi:id="_7Y5KEhZkEe6og_IXNOLUYw" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+          <taggedValue xmi:id="_7Y5KExZkEe6og_IXNOLUYw" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_7Y5KFBZkEe6og_IXNOLUYw" tag="Description" value=""/>
+          <taggedValue xmi:id="_7Y5KFRZkEe6og_IXNOLUYw" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_7Y5KFhZkEe6og_IXNOLUYw" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_7Y5KFxZkEe6og_IXNOLUYw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_xkkSSwnMEe6zGuVe_Ilm8A" dataFilter="_9i6TkAnMEe6zGuVe_Ilm8A" analysisType="Table Analysis"/>
+    <contextType xmi:id="_9iwikAnMEe6zGuVe_Ilm8A" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_9i6TkAnMEe6zGuVe_Ilm8A" name="UC2_Analysis_Conteggio_record">
+    <ranges xmi:id="_9i6TkQnMEe6zGuVe_Ilm8A">
+      <expressions xmi:id="_9i6TkgnMEe6zGuVe_Ilm8A">
+        <expression xsi:type="relational:TdExpression" xmi:id="_9i6TkwnMEe6zGuVe_Ilm8A" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
