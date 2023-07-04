@@ -124,6 +124,40 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_B0__oBo7Ee6nW_jdre2V3g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "POC_WIDIBA:_kzj7QAtIEe6SA7Nx7VOXHA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_M7RdABAVEe6Ru87eRWaZkQ",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_B6MBoBo7Ee6nW_jdre2V3g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "AreaSessionHolder",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Ca0vMBZ6Ee6og_IXNOLUYw",
     "version" : "0.1",
     "type" : "job"
@@ -140,6 +174,18 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "POC_WIDIBA:_B6MBoBo7Ee6nW_jdre2V3g",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_M7RdABAVEe6Ru87eRWaZkQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_TadDoBZ7Ee6og_IXNOLUYw",
     "version" : "Latest",
     "type" : "rule"
