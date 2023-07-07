@@ -1,0 +1,29 @@
+{
+  "itemId" : "_lXTR4FBFEe2FAb9XXbwHiQ",
+  "contextList" : [ {
+    "contextName" : "dev",
+    "repoId" : "_F-bWUE-cEe2FAb9XXbwHiQ",
+    "parameterList" : [ {
+      "id" : "_eoY-EefzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Server"
+    }, {
+      "id" : "_eoY-EufzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Login"
+    }, {
+      "id" : "_eoY-E-fzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_AdditionalParams"
+    }, {
+      "id" : "_eoY-FOfzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Port"
+    }, {
+      "id" : "_eoY-FefzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Database"
+    }, {
+      "id" : "_eoY-FufzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Password"
+    }, {
+      "id" : "_eoY-F-fzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Schema"
+    } ]
+  } ]
+}

@@ -1,0 +1,1754 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="prod" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="prod">
+    <contextParameter comment="" internalId="_rJdBTlBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_AdditionalParams" prompt="DWH_DATMARTS_MARG_AdditionalParams?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rJdBT1BGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Database" prompt="DWH_DATMARTS_MARG_Database?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="DWH_DATMARTS"/>
+    <contextParameter comment="" internalId="_rJdBUFBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Login" prompt="DWH_DATMARTS_MARG_Login?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rJdBUVBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Password" prompt="DWH_DATMARTS_MARG_Password?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_Password" value="enc:system.encryption.key.v1:D5t9Zlsri9KT+8bi/OHBqrWNtOru1y/hZudhhnH6k1Fv9cqe/lqGlg=="/>
+    <contextParameter comment="" internalId="_rJdBUlBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Port" prompt="DWH_DATMARTS_MARG_Port?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_rJdBU1BGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Schema" prompt="DWH_DATMARTS_MARG_Schema?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="marginalita"/>
+    <contextParameter comment="" internalId="_rJdBVFBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Server" prompt="DWH_DATMARTS_MARG_Server?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_rJdBVVBGEe2FAb9XXbwHiQ" name="DWH_dwh_AdditionalParams" prompt="DWH_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rJdBVlBGEe2FAb9XXbwHiQ" name="DWH_dwh_Database" prompt="DWH_dwh_Database?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_rJdBV1BGEe2FAb9XXbwHiQ" name="DWH_dwh_Login" prompt="DWH_dwh_Login?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rJdBWFBGEe2FAb9XXbwHiQ" name="DWH_dwh_Password" prompt="DWH_dwh_Password?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_Password" value="enc:system.encryption.key.v1:4lARVdk4GRdbA4XmPB+kOBb9C66JdczWBCNc4Vngl0ByoRk49zFCBw=="/>
+    <contextParameter comment="" internalId="_rJdBWVBGEe2FAb9XXbwHiQ" name="DWH_dwh_Port" prompt="DWH_dwh_Port?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_rJdBWlBGEe2FAb9XXbwHiQ" name="DWH_dwh_Schema" prompt="DWH_dwh_Schema?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rJdBW1BGEe2FAb9XXbwHiQ" name="DWH_dwh_Server" prompt="DWH_dwh_Server?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_G_Uj8KukEe24dN6zSnXqew" name="DWH_work_Login" prompt="DWH_work_Login?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_G_Uj8aukEe24dN6zSnXqew" name="DWH_work_Server" prompt="DWH_work_Server?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_G_Uj8qukEe24dN6zSnXqew" name="DWH_work_Schema" prompt="DWH_work_Schema?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="work"/>
+    <contextParameter comment="" internalId="_G_Uj86ukEe24dN6zSnXqew" name="DWH_work_AdditionalParams" prompt="DWH_work_AdditionalParams?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="sendStringParametersAsUnicode=false"/>
+    <contextParameter comment="" internalId="_G_Uj9KukEe24dN6zSnXqew" name="DWH_work_Database" prompt="DWH_work_Database?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_G_Uj9aukEe24dN6zSnXqew" name="DWH_work_Password" prompt="DWH_work_Password?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_Password" value="enc:system.encryption.key.v1:TFAKHDhq3iepOD0k2t1DD0+SaMHL57H7R9K2AC9OWl7FrlAKMOxB4A=="/>
+    <contextParameter comment="" internalId="_G_Uj9qukEe24dN6zSnXqew" name="DWH_work_Port" prompt="DWH_work_Port?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_rv0FcKxCEe24dN6zSnXqew" name="DWH_stage_Password" prompt="DWH_stage_Password?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_Password" value="enc:system.encryption.key.v1:hKP3RI8s+LkBsuX+Vkspn/vuPYv9YomoJL+y34dGRmMAedZ0qD1wfg=="/>
+    <contextParameter comment="" internalId="_rv0FcaxCEe24dN6zSnXqew" name="DWH_stage_Login" prompt="DWH_stage_Login?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rv0FcqxCEe24dN6zSnXqew" name="DWH_stage_Database" prompt="DWH_stage_Database?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_rv0Fc6xCEe24dN6zSnXqew" name="DWH_stage_Server" prompt="DWH_stage_Server?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_rv0FdKxCEe24dN6zSnXqew" name="DWH_stage_Schema" prompt="DWH_stage_Schema?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_rv0FdaxCEe24dN6zSnXqew" name="DWH_stage_AdditionalParams" prompt="DWH_stage_AdditionalParams?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rv0FdqxCEe24dN6zSnXqew" name="DWH_stage_Port" prompt="DWH_stage_Port?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_c7uR4LHbEe25peDxUzyBPA" name="data_report" prompt="data_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_c7uR4bHbEe25peDxUzyBPA" name="ultima_chiusura" prompt="ultima_chiusura?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_c7uR4rHbEe25peDxUzyBPA" name="data_inizio_periodo_report" prompt="data_inizio_periodo_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_PeJ8sLHfEe25peDxUzyBPA" name="data_fine_periodo_report" prompt="data_fine_periodo_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_ZAdIQLaTEe25peDxUzyBPA" name="tipo_report" prompt="tipo_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="dev">
+    <contextParameter comment="" internalId="_rJdBXFBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_AdditionalParams" prompt="DWH_DATMARTS_MARG_AdditionalParams?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rJdBXVBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Database" prompt="DWH_DATMARTS_MARG_Database?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="DWH_DATMARTS"/>
+    <contextParameter comment="" internalId="_rJdBXlBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Login" prompt="DWH_DATMARTS_MARG_Login?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rJdBX1BGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Password" prompt="DWH_DATMARTS_MARG_Password?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_Password" value="enc:system.encryption.key.v1:yc0Z98TupiDttVQw765mwEkqUgUvv7ktp7mYAR7eDpOaNNHmDsTysg=="/>
+    <contextParameter comment="" internalId="_rJdBYFBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Port" prompt="DWH_DATMARTS_MARG_Port?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_rJdBYVBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Schema" prompt="DWH_DATMARTS_MARG_Schema?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="marginalita"/>
+    <contextParameter comment="" internalId="_rJdBYlBGEe2FAb9XXbwHiQ" name="DWH_DATMARTS_MARG_Server" prompt="DWH_DATMARTS_MARG_Server?" promptNeeded="false" repositoryContextId="_F-bWUE-cEe2FAb9XXbwHiQ" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_rJdBY1BGEe2FAb9XXbwHiQ" name="DWH_dwh_AdditionalParams" prompt="DWH_dwh_AdditionalParams?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rJdBZFBGEe2FAb9XXbwHiQ" name="DWH_dwh_Database" prompt="DWH_dwh_Database?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_rJdBZVBGEe2FAb9XXbwHiQ" name="DWH_dwh_Login" prompt="DWH_dwh_Login?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rJdBZlBGEe2FAb9XXbwHiQ" name="DWH_dwh_Password" prompt="DWH_dwh_Password?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_Password" value="enc:system.encryption.key.v1:T/LNoLp0tUuRQ0vDyOjm1ocWRTrjjSMbJMJUlmrr2DFG8hE9DbS2kg=="/>
+    <contextParameter comment="" internalId="_rJdBZ1BGEe2FAb9XXbwHiQ" name="DWH_dwh_Port" prompt="DWH_dwh_Port?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_rJdBaFBGEe2FAb9XXbwHiQ" name="DWH_dwh_Schema" prompt="DWH_dwh_Schema?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rJdBaVBGEe2FAb9XXbwHiQ" name="DWH_dwh_Server" prompt="DWH_dwh_Server?" promptNeeded="false" repositoryContextId="_1X_ZsO1dEeyx27iKO3JlaA" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_G_Uj96ukEe24dN6zSnXqew" name="DWH_work_Login" prompt="DWH_work_Login?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_G_Uj-KukEe24dN6zSnXqew" name="DWH_work_Server" prompt="DWH_work_Server?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_G_Uj-aukEe24dN6zSnXqew" name="DWH_work_Schema" prompt="DWH_work_Schema?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="work"/>
+    <contextParameter comment="" internalId="_G_Uj-qukEe24dN6zSnXqew" name="DWH_work_AdditionalParams" prompt="DWH_work_AdditionalParams?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="sendStringParametersAsUnicode=false"/>
+    <contextParameter comment="" internalId="_G_Uj-6ukEe24dN6zSnXqew" name="DWH_work_Database" prompt="DWH_work_Database?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_G_Uj_KukEe24dN6zSnXqew" name="DWH_work_Password" prompt="DWH_work_Password?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_Password" value="enc:system.encryption.key.v1:+gydm6aGPgTYIXMpVk/lVMPklEQ+SqXMIUyEM/NjKpurhlqwoe0swA=="/>
+    <contextParameter comment="" internalId="_G_Uj_aukEe24dN6zSnXqew" name="DWH_work_Port" prompt="DWH_work_Port?" promptNeeded="false" repositoryContextId="_Eh2swAmiEe2ow9etymSfAg" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_rv0Fd6xCEe24dN6zSnXqew" name="DWH_stage_Password" prompt="DWH_stage_Password?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_Password" value="enc:system.encryption.key.v1:qXPxBJ327V3Rr7jlTuTOKMtdnhW1ANxArbY/FVOgeXyt++wSB8r5Hw=="/>
+    <contextParameter comment="" internalId="_rv0FeKxCEe24dN6zSnXqew" name="DWH_stage_Login" prompt="DWH_stage_Login?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="dwh"/>
+    <contextParameter comment="" internalId="_rv0FeaxCEe24dN6zSnXqew" name="DWH_stage_Database" prompt="DWH_stage_Database?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_rv0FeqxCEe24dN6zSnXqew" name="DWH_stage_Server" prompt="DWH_stage_Server?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="euroindsql"/>
+    <contextParameter comment="" internalId="_rv0Fe6xCEe24dN6zSnXqew" name="DWH_stage_Schema" prompt="DWH_stage_Schema?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_rv0FfKxCEe24dN6zSnXqew" name="DWH_stage_AdditionalParams" prompt="DWH_stage_AdditionalParams?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rv0FfaxCEe24dN6zSnXqew" name="DWH_stage_Port" prompt="DWH_stage_Port?" promptNeeded="false" repositoryContextId="_eoGDIOfzEey7f-OLDClssw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_c7uR47HbEe25peDxUzyBPA" name="data_report" prompt="data_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_c7uR5LHbEe25peDxUzyBPA" name="ultima_chiusura" prompt="ultima_chiusura?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_c7uR5bHbEe25peDxUzyBPA" name="data_inizio_periodo_report" prompt="data_inizio_periodo_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_PeJ8sbHfEe25peDxUzyBPA" name="data_fine_periodo_report" prompt="data_fine_periodo_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_ZAdvULaTEe25peDxUzyBPA" name="tipo_report" prompt="tipo_report?" promptNeeded="false" repositoryContextId="_KmC7ELHbEe25peDxUzyBPA" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wy1NI3x5ljrNNjkosErLFvUtKR3E2o6PKipQMZ05"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/8.1 Horsa/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:S4l0/EaJYx94lehIM9Mv78+pJQ3CSgEtf+8bJ659"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_wGzsEgvqEe2tks_jbvVjqQ" name="SQLike"/>
+    <routinesParameter id="_wHtD9gvqEe2tks_jbvVjqQ" name="DataOperation"/>
+    <routinesParameter id="_wH208AvqEe2tks_jbvVjqQ" name="Mathematical"/>
+    <routinesParameter id="_wH_-4AvqEe2tks_jbvVjqQ" name="Numeric"/>
+    <routinesParameter id="_wIJv5gvqEe2tks_jbvVjqQ" name="Relational"/>
+    <routinesParameter id="_wITg5gvqEe2tks_jbvVjqQ" name="StringHandling"/>
+    <routinesParameter id="_wIcq0AvqEe2tks_jbvVjqQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_wImb1gvqEe2tks_jbvVjqQ" name="TalendDate"/>
+    <routinesParameter id="_wIvlxgvqEe2tks_jbvVjqQ" name="TalendString"/>
+    <routinesParameter id="_wI5WwAvqEe2tks_jbvVjqQ" name="TalendStringUtil"/>
+    <routinesParameter id="_Qn0fUArHEe6N7tCVjRneiQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_QnuYsArHEe6N7tCVjRneiQ" name="DataQuality"/>
+    <routinesParameter id="_QoFlEArHEe6N7tCVjRneiQ" name="DQTechnical"/>
+    <routinesParameter id="_Qn-3YArHEe6N7tCVjRneiQ" name="DqStringHandling"/>
+    <routinesParameter id="_QnnrAArHEe6N7tCVjRneiQ" name="DataMasking"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt; CLOSE WORK&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_lXTR4FBFEe2FAb9XXbwHiQ"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DWH_DATMARTS_MARG_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DWH_DATMARTS_MARG_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DWH_DATMARTS_MARG_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DWH_DATMARTS_MARG_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DWH_DATMARTS_MARG_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kuRveSOXl411dUH/r70C1sF4sFoNVHHOXYt/P29BeQ7Yn0qy3qqGRpgnI4JUIFcXTEEqyva7QE/Fji3E0MU="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DWH_DATMARTS_MARG_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt; &lt;b&gt;DWH_datmarts_marginalita&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_4"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt; CLOSE MARGIN&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ZDhaAAmiEe2ow9etymSfAg"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DWH_work_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DWH_work_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DWH_work_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DWH_work_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DWH_work_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uhax7H2SuTs1VMvVS5BgbZaoWNn4IL1tor2DTshC7lobDX0JGm6SnTlUB05TKkj058Ml5H0="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DWH_work_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt; &lt;b&gt;DWH_work&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCommit_1"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_zTkD0O1dEeyx27iKO3JlaA"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DWH_dwh_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DWH_dwh_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DWH_dwh_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DWH_dwh_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DWH_dwh_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OP3Uf6WSkDHOeQaMD0RKonMNEIwNOwpsx82S7qWzcd3Lvl49bXLhEIn87iZNKIfV2yMtZw=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DWH_dwh_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt; &lt;b&gt;DWH_dwh&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt; CLOSE DWH&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:81MRTLyaDmm62S3N+LbJh2Rr0nOo4zZTadJc4SQv"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DISTINTA_BASE_ATTUALIZZATA&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT distinct dba.PERIODO, trim(dba.ART_ASSIEME_COD) as ART_ASSIEME_COD, dba.ART_COD_COMP, dba.ART_COD_PADRE, dba.LIVELLO, dba.FOGLIA, dba.PERCORSO, dba.TIPO_PARTE_COD, &#13;&#10;&#9;dba.WSTP_QTA, dba.WSTP_COSTO_UNITARIO, dba.WSTP_COSTO,   dba.COSTO_UNITARIO_MAGOSTIPER, dba.COSTO_EURO_KG,&#13;&#10;&#9;Coalesce(dcc.CONSUMO_MEDIO_MENSILE,0) ,costi.COSTO_CONSUNTIVO,costi.COSTO_UNITARIO_MEDIO_PONDERATO,&#13;&#10;--&#9;dcr.CONSUMO_MEDIO_MENSILE_ROLLING12, dcr.COSTO_UNITARIO_ROLLING12, dcr.COSTO_ROLLING12&#13;&#10;&#9;&#9;0 ,&#13;&#10;&#9;0 ,&#13;&#10;&#9;0,&#13;&#10;    'DISTINTA_BASE' TIPO,&#13;&#10;&#9;ARTICOLO_SOSTITUTIVO&#13;&#10;FROM DWH_DATMARTS.marginalita.DISTINTA_BASE_ATTUALIZZATA dba&#13;&#10;LEFT JOIN DWH.[work].WRK_DBA_CONSUMI_MEDI dcc &#13;&#10;&#9;ON dcc.PERIODO = dba.PERIODO &#13;&#10;&#9;AND dcc.ART_ASSIEME_COD = dba.ART_ASSIEME_COD &#13;&#10;&#9;AND dcc.ART_COD_COMP = dba.ART_COD_COMP &#13;&#10;&#9;AND COALESCE(dcc.ART_COD_PADRE,'root') = COALESCE(dba.ART_COD_PADRE,'root')&#13;&#10;&#9;AND dcc.LIVELLO = dba.LIVELLO &#13;&#10;LEFT JOIN DWH.[work].WRK_DBA_COSTI_MEDI costi &#13;&#10;&#9;ON  costi.PERIODO = dba.PERIODO &#13;&#10;&#9;AND costi.ART_ASSIEME_COD = dba.ART_ASSIEME_COD &#13;&#10;&#9;AND costi.ART_COD_COMP = dba.ART_COD_COMP &#13;&#10;&#9;AND COALESCE(costi.ART_COD_PADRE,'root') = COALESCE(dba.ART_COD_PADRE,'root')&#13;&#10;order by PERCORSO &#13;&#10;&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_ASSIEME_COD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD_COMP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD_PADRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIVELLO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FOGLIA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERCORSO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO_PARTE_COD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WSTP_QTA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WSTP_COSTO_UNITARIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WSTP_COSTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_UNITARIO_MAGOSTIPER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_EURO_KG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONSUMO_MEDIO_MENSILE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_CONSUNTIVO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_UNITARIO_MEDIO_PONDERATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONSUMO_MEDIO_MENSILE_ROLLING12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_UNITARIO_ROLLING12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_ROLLING12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARTICOLO_SOSTITUTIVO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="23" name="PERIODO" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_ASSIEME_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LIVELLO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="FOGLIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="PERCORSO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIPO_PARTE_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_QTA" nullable="true" originalLength="-1" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO_UNITARIO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_EURO_KG" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_CONSUNTIVO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TIPO" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ARTICOLO_SOSTITUTIVO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tUnite_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUnite_1">
+      <column comment="" key="false" length="23" name="PERIODO" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_ASSIEME_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LIVELLO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="FOGLIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="PERCORSO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIPO_PARTE_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_QTA" nullable="true" originalLength="-1" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO_UNITARIO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_EURO_KG" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_CONSUNTIVO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TIPO" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="QTA_UMF_PRODOTTA_L0" nullable="true" originalLength="14" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_INIZ_NUM" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TIPO_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="NUM_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="RIGA_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_DOCUMENTO" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_FINE_LAVORAZIONE" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ARTICOLO_SOSTITUTIVO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="UMF_CONSUMI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_kHyG4LzGEe2sWq4o4B3M0w-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="23" name="PERIODO" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_ASSIEME_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LIVELLO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="FOGLIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="PERCORSO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIPO_PARTE_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_QTA" nullable="true" originalLength="-1" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO_UNITARIO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_EURO_KG" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_CONSUNTIVO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TIPO" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="QTA_UMF_PRODOTTA_L0" nullable="true" originalLength="14" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_INIZ_NUM" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TIPO_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="NUM_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="RIGA_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_DOCUMENTO" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_FINE_LAVORAZIONE" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ARTICOLO_SOSTITUTIVO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="UMF_CONSUMI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.PERIODO" name="PERIODO" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.ART_ASSIEME_COD" name="ART_ASSIEME_COD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.ART_COD_COMP" name="ART_COD_COMP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.ART_COD_PADRE" name="ART_COD_PADRE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.LIVELLO" name="LIVELLO" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.FOGLIA" name="FOGLIA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.PERCORSO" name="PERCORSO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.TIPO_PARTE_COD" name="TIPO_PARTE_COD" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.WSTP_QTA" name="WSTP_QTA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.WSTP_COSTO_UNITARIO" name="WSTP_COSTO_UNITARIO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.WSTP_COSTO" name="WSTP_COSTO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.COSTO_UNITARIO_MAGOSTIPER" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.COSTO_EURO_KG" name="COSTO_EURO_KG" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.CONSUMO_MEDIO_MENSILE" name="CONSUMO_MEDIO_MENSILE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.COSTO_CONSUNTIVO" name="COSTO_CONSUNTIVO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.COSTO_UNITARIO_MEDIO_PONDERATO" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.CONSUMO_MEDIO_MENSILE_ROLLING12" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.COSTO_UNITARIO_ROLLING12" name="COSTO_UNITARIO_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.COSTO_ROLLING12" name="COSTO_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.TIPO" name="TIPO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="F_ORDINI_LAVORO_TES.QTA_UMF_VERSATA == null ?  new BigDecimal(0) : F_ORDINI_LAVORO_TES.QTA_UMF_VERSATA " name="QTA_UMF_PRODOTTA_L0" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATA_INIZ_NUM" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TIPO_DOC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NUM_DOC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="RIGA_DOC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATA_DOCUMENTO" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_ART_VERSATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_ART_VERSATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_ART_SCARTATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_ART_SCARTATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_COMP_USATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_COMP_USATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATA_FINE_LAVORAZIONE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.ARTICOLO_SOSTITUTIVO " name="ARTICOLO_SOSTITUTIVO" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="D_ARTICOLO.UNITA_MISURA_INTERNA " name="UMF_CONSUMI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TES_COSTO_IMPEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TES_COSTO_ASSEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TES_COSTO_USATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DET_COSTO_IMPEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DET_COSTO_ASSEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DET_COSTO_USATO" nullable="true" type="id_BigDecimal"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="DISTINTA_BASE_ATTUALIZZATA" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="PERIODO" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ART_ASSIEME_COD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ART_COD_COMP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ART_COD_PADRE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIVELLO" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="FOGLIA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PERCORSO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TIPO_PARTE_COD" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="WSTP_QTA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="WSTP_COSTO_UNITARIO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="WSTP_COSTO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_EURO_KG" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CONSUMO_MEDIO_MENSILE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_CONSUNTIVO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_UNITARIO_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TIPO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ARTICOLO_SOSTITUTIVO" nullable="true" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="F_ORDINI_LAVORO_TES" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.PERIODO " name="DATA_CHIUSURA" nullable="true" operator="=" type="id_Date"/>
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.ART_ASSIEME_COD " name="ART_COD" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="QTA_UMF_VERSATA" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="D_ARTICOLO" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="DISTINTA_BASE_ATTUALIZZATA.ART_COD_COMP " name="ART_COD" operator="=" type="id_String"/>
+        <mapperTableEntries name="UNITA_MISURA_INTERNA" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MBYaeITSAFmFWsxjRQ547JZECodTujDeNDDGNiPc"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;F_ORDINI_LAVORO_TES&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;select cast(EOMONTH(DATA_CHIUSURA) as datetime) as DATA_CHIUSURA&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;, trim(ART_COD) as  ART_COD&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;, sum(QTA_UMF_VERSATA) as QTA_UMF_VERSATA&#13;&#10;from DWH.dwh.F_ORDINI_LAVORO_TES&#13;&#10;/*where DATA_RILASCIO =  cast('2022-10-31 00:00:00.000' as date)*/&#13;&#10;group by EOMONTH(DATA_CHIUSURA), ART_COD&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_CHIUSURA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UMF_VERSATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="23" name="DATA_CHIUSURA" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ART_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="QTA_UMF_VERSATA" nullable="true" originalLength="14" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="11" offsetLabelY="0" posX="512" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xRIl5EDjJMCTQ8+1fTYFrnuAnf1nv1thX556fu2u"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;F_ORDINI_LAVORO&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT  &#13;&#10;&#9;&#9;&#9;   'ORDINI_DI_LAVORO' as TIPO&#13;&#10;              , odl_t.DATA_INIZ_NUM&#13;&#10;            , odl_t.TIPO_DOC_COD as TIPO_DOC&#13;&#10;            , odl_t.NUM_DOC&#13;&#10;            , odl_d.RIGA_DOC &#13;&#10;            , odl_t.DATA_ORDINE as DATA_DOCUMENTO&#13;&#10;            , odl_t.ART_COD as ART_COD_PADRE&#13;&#10;            , odl_d.ART_COD as ART_COD_COMP&#13;&#10;            , odl_t.QTA_UMI_DA_PRODURRE as QTA_UM_INT_ART_DA_PROD_ODL&#13;&#10;            , odl_t.QTA_UMF_DA_PRODURRE as QTA_UM_FIS_ART_DA_PROD_ODL&#13;&#10;            , odl_t.QTA_UMI_VERSATA as QTA_UM_INT_ART_VERSATA&#13;&#10;            , odl_t.QTA_UMF_VERSATA as QTA_UM_FIS_ART_VERSATA&#13;&#10; &#9;&#9;&#9; , odl_t.QTA_UMI_SCARTATA as QTA_UM_INT_ART_SCARTATA&#13;&#10;&#9;&#9;&#9;  , odl_t.QTA_UMF_SCARTATA as QTA_UM_FIS_ART_SCARTATA&#13;&#10;            , odl_d.QTA_UMI_IMPEGNATA as QTA_UM_INT_COMP_IMPEGNATA_ODL&#13;&#10;            , odl_d.QTA_UMF_IMPEGNATA as QTA_UM_FIS_COMP_IMPEGNATA_ODL&#13;&#10;            ,(odl_d.QTA_UMI_IMPEGNATA /nullif(odl_t.QTA_UMI_DA_PRODURRE, 0)) * odl_t.QTA_UMI_VERSATA as QTA_UM_INT_COMP_IMPEGNATA&#13;&#10;            ,(odl_d.QTA_UMF_IMPEGNATA /nullif(odl_t.QTA_UMF_DA_PRODURRE,0)) * odl_t.QTA_UMF_VERSATA as QTA_UM_FIS_COMP_IMPEGNATA&#13;&#10;            , odl_d.QTA_UMI_USATA as QTA_UM_INT_COMP_USATA&#13;&#10;            , odl_d.QTA_UMF_USATA as QTA_UM_FIS_COMP_USATA&#13;&#10;&#9;&#9;&#9;, odl_t.DATA_CHIUSURA&#13;&#10;&#9;&#9;&#9;,odl_t.COSTO_IMPEGNATO TES_COSTO_IMPEGNATO&#13;&#10;&#9;&#9;&#9;,odl_t.COSTO_ASSEGNATO TES_COSTO_ASSEGNATO&#13;&#10;&#9;&#9;&#9;,odl_t.COSTO_USATO TES_COSTO_USATO&#9;&#9;&#13;&#10;&#9;&#9;&#9;,odl_d.COSTO_IMPEGNATO DET_COSTO_IMPEGNATO&#13;&#10;&#9;&#9;&#9;,odl_d.COSTO_ASSEGNATO DET_COSTO_ASSEGNATO&#13;&#10;&#9;&#9;&#9;,odl_d.COSTO_USATO DET_COSTO_USATO&#9;&#9;&#13;&#10;from DWH.dwh.F_ORDINI_LAVORO_TES odl_t&#13;&#10;inner join DWH.dwh.F_ORDINI_LAVORO_DET odl_d&#13;&#10;      on odl_t.DATA_INIZ_NUM = odl_d.DATA_INIZ_NUM &#13;&#10;      and odl_t.TIPO_DOC_COD = odl_d.TIPO_DOC_COD &#13;&#10;      and odl_t.NUM_DOC = odl_d.NUM_DOC&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_INIZ_NUM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO_DOC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_DOC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RIGA_DOC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_DOCUMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD_PADRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD_COMP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_ART_VERSATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_ART_VERSATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_ART_SCARTATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_ART_SCARTATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_COMP_USATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_COMP_USATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_CHIUSURA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TES_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TES_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TES_COSTO_USATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DET_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DET_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DET_COSTO_USATO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" key="false" length="16" name="TIPO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_INIZ_NUM" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TIPO_DOC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="NUM_DOC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="RIGA_DOC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_DOCUMENTO" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="15" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="15" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_CHIUSURA" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_kHyG4LzGEe2sWq4o4B3M0w-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="F_ORDINI_LAVORO">
+      <column comment="" key="false" length="23" name="PERIODO" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_ASSIEME_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LIVELLO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="FOGLIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="PERCORSO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIPO_PARTE_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_QTA" nullable="true" originalLength="-1" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO_UNITARIO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_EURO_KG" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_CONSUNTIVO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TIPO" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="QTA_UMF_PRODOTTA_L0" nullable="true" originalLength="14" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_INIZ_NUM" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TIPO_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="NUM_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="RIGA_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_DOCUMENTO" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_FINE_LAVORAZIONE" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ARTICOLO_SOSTITUTIVO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="UMF_CONSUMI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="F_ORDINI_LAVORO" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="PERIODO" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ART_ASSIEME_COD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ART_COD_COMP" name="ART_COD_COMP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ART_COD_PADRE" name="ART_COD_PADRE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIVELLO" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="FOGLIA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PERCORSO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TIPO_PARTE_COD" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="WSTP_QTA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="WSTP_COSTO_UNITARIO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="WSTP_COSTO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_EURO_KG" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CONSUMO_MEDIO_MENSILE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_CONSUNTIVO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_UNITARIO_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="COSTO_ROLLING12" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.TIPO" name="TIPO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="QTA_UMF_PRODOTTA_L0" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.DATA_INIZ_NUM" name="DATA_INIZ_NUM" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.TIPO_DOC" name="TIPO_DOC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.NUM_DOC" name="NUM_DOC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.RIGA_DOC" name="RIGA_DOC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.DATA_DOCUMENTO" name="DATA_DOCUMENTO" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.QTA_UM_INT_ART_DA_PROD_ODL" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_FIS_ART_DA_PROD_ODL" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_INT_ART_VERSATA" name="QTA_UM_INT_ART_VERSATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_FIS_ART_VERSATA" name="QTA_UM_FIS_ART_VERSATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_INT_ART_SCARTATA " name="QTA_UM_INT_ART_SCARTATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_FIS_ART_SCARTATA " name="QTA_UM_FIS_ART_SCARTATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_INT_COMP_IMPEGNATA_ODL" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_FIS_COMP_IMPEGNATA_ODL" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_INT_COMP_IMPEGNATA" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_FIS_COMP_IMPEGNATA" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_INT_COMP_USATA" name="QTA_UM_INT_COMP_USATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.QTA_UM_FIS_COMP_USATA" name="QTA_UM_FIS_COMP_USATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.DATA_CHIUSURA " name="DATA_FINE_LAVORAZIONE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ARTICOLO_SOSTITUTIVO" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="UMF_CONSUMI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TES_COSTO_IMPEGNATO" name="TES_COSTO_IMPEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.TES_COSTO_ASSEGNATO" name="TES_COSTO_ASSEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.TES_COSTO_USATO" name="TES_COSTO_USATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.DET_COSTO_IMPEGNATO" name="DET_COSTO_IMPEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.DET_COSTO_ASSEGNATO" name="DET_COSTO_ASSEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.DET_COSTO_USATO" name="DET_COSTO_USATO" nullable="true" type="id_BigDecimal"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="TIPO" type="id_String"/>
+        <mapperTableEntries name="DATA_INIZ_NUM" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TIPO_DOC" type="id_String"/>
+        <mapperTableEntries name="NUM_DOC" type="id_BigDecimal"/>
+        <mapperTableEntries name="RIGA_DOC" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATA_DOCUMENTO" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ART_COD_PADRE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ART_COD_COMP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_ART_VERSATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_ART_VERSATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_ART_SCARTATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_ART_SCARTATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_INT_COMP_USATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QTA_UM_FIS_COMP_USATA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATA_CHIUSURA" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TES_COSTO_IMPEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TES_COSTO_ASSEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TES_COSTO_USATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DET_COSTO_IMPEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DET_COSTO_ASSEGNATO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DET_COSTO_USATO" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_NUMBER" show="false" value="4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:j9FUeJdP5PUF5vrX7jUBnN3WlaOGtGV/w9yfzBzE"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;F_MARGINALITA&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="PERIODO"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_ASSIEME_COD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD_COMP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD_PADRE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIVELLO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FOGLIA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERCORSO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO_PARTE_COD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WSTP_QTA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WSTP_COSTO_UNITARIO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WSTP_COSTO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_UNITARIO_MAGOSTIPER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_EURO_KG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONSUMO_MEDIO_MENSILE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_CONSUNTIVO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_UNITARIO_MEDIO_PONDERATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONSUMO_MEDIO_MENSILE_ROLLING12"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_UNITARIO_ROLLING12"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COSTO_ROLLING12"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UMF_PRODOTTA_L0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_INIZ_NUM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIPO_DOC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_DOC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RIGA_DOC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_DOCUMENTO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_ART_VERSATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_ART_VERSATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_ART_SCARTATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_ART_SCARTATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_INT_COMP_USATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_UM_FIS_COMP_USATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_FINE_LAVORAZIONE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARTICOLO_SOSTITUTIVO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UMF_CONSUMI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TES_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TES_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TES_COSTO_USATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DET_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DET_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DET_COSTO_USATO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="23" name="PERIODO" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_ASSIEME_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LIVELLO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="FOGLIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="PERCORSO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIPO_PARTE_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_QTA" nullable="true" originalLength="-1" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO_UNITARIO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_EURO_KG" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_CONSUNTIVO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TIPO" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="QTA_UMF_PRODOTTA_L0" nullable="true" originalLength="14" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_INIZ_NUM" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TIPO_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="NUM_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="RIGA_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_DOCUMENTO" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_FINE_LAVORAZIONE" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ARTICOLO_SOSTITUTIVO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="UMF_CONSUMI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="23" name="PERIODO" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_ASSIEME_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_COMP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="ART_COD_PADRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LIVELLO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="FOGLIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="PERCORSO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIPO_PARTE_COD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_QTA" nullable="true" originalLength="-1" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO_UNITARIO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="WSTP_COSTO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MAGOSTIPER" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_EURO_KG" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_CONSUNTIVO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_MEDIO_PONDERATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="CONSUMO_MEDIO_MENSILE_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_UNITARIO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="COSTO_ROLLING12" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TIPO" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="QTA_UMF_PRODOTTA_L0" nullable="true" originalLength="14" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_INIZ_NUM" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TIPO_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="NUM_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="RIGA_DOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_DOCUMENTO" nullable="true" originalLength="-1" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_DA_PROD_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_ART_VERSATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_INT_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="QTA_UM_FIS_ART_SCARTATA" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA_ODL" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_IMPEGNATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_INT_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="QTA_UM_FIS_COMP_USATA" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DATA_FINE_LAVORAZIONE" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ARTICOLO_SOSTITUTIVO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="UMF_CONSUMI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="TES_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_IMPEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_ASSEGNATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="DET_COSTO_USATO" nullable="true" originalLength="-1" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_4"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4gYtygwEcQky9by5Jr3/uNSs4tnsc7qhtkdhgr/G"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;D_ARTICOLI&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;Select ART_COD, UNITA_MISURA_INTERNA FROM DWH.dwh.D_ARTICOLO&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ART_COD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNITA_MISURA_INTERNA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4">
+      <column comment="" key="false" length="15" name="ART_COD" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="UNITA_MISURA_INTERNA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBClose_2" offsetLabelX="0" offsetLabelY="0" source="tDBClose_2" target="tDBClose_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_4" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_4" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBClose_4" offsetLabelX="0" offsetLabelY="0" source="tDBClose_4" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk10"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBConnection_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="DISTINTA_BASE_ATTUALIZZATA" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="TIPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_DOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RIGA_DOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO_MOV_DARE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO_MOV_AVERE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_ART_VERSATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_ART_VERSATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_COMP_USATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO_IVA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_COMP_USATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTRO_RESP_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_INIZ_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ESERCIZIO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONTO_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TIPO_DOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_DOCUMENTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ARTICOLO_SOSTITUTIVO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DISTINTA_BASE_ATTUALIZZATA"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="10" mergeOrder="1" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UMF_PRODOTTA_L0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_DOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RIGA_DOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO_MOV_DARE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO_MOV_AVERE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_ART_VERSATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_COMP_IMPEGNATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_ART_DA_PROD_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_ART_VERSATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_COMP_IMPEGNATA_ODL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_COMP_USATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO_IVA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_COMP_USATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTRO_RESP_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_INIZ_NUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ESERCIZIO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONTO_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TIPO_DOC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_DOCUMENTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_FINE_LAVORAZIONE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ARTICOLO_SOSTITUTIVO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UMF_CONSUMI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_ART_SCARTATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_ART_SCARTATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TES_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DET_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TES_COSTO_USATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DET_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DET_COSTO_USATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TES_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="F_ORDINI_LAVORO_TES" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="F_ORDINI_LAVORO_TES"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="IMPORTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CENTRO_RESP_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UMF_PRODOTTA_L0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WSTP_QTA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ART_COD_PADRE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIVELLO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WSTP_COSTO_UNITARIO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COSTO_UNITARIO_ROLLING12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COSTO_UNITARIO_MAGOSTIPER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ART_COD_COMP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FOGLIA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERCORSO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONSUMO_MEDIO_MENSILE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COSTO_UNITARIO_MEDIO_PONDERATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ART_ASSIEME_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WSTP_COSTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONSUMO_MEDIO_MENSILE_ROLLING12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERIODO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TIPO_PARTE_COD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COSTO_CONSUNTIVO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COSTO_ROLLING12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COSTO_EURO_KG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_CHIUSURA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_CHIUSURA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="F_ORDINI_LAVORO" lineStyle="10" mergeOrder="2" metaname="F_ORDINI_LAVORO" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_FINE_LAVORAZIONE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UMF_CONSUMI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ARTICOLO_SOSTITUTIVO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_INT_ART_SCARTATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTA_UM_FIS_ART_SCARTATA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TES_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DET_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TES_COSTO_USATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DET_COSTO_IMPEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DET_COSTO_USATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TES_COSTO_ASSEGNATO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="F_ORDINI_LAVORO"/>
+  </connection>
+  <connection connectorName="FLOW" label="D_ARTICOLO" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="D_ARTICOLO"/>
+  </connection>
+  <note opaque="true" posX="256" posY="480" sizeHeight="64" sizeWidth="609" text="Il job esegue una raccolta da tutte le tabelle di work più alcune tabelle del DWH per popolare  &#13;&#10;la tabella delle marginalità che poi verrà usata a front-end">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="RIPORTO TUTTI LA DBA NELLA FACT FINALE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dadf515c-956a-44cb-9c77-e47f98219853"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>32LCM3ZlNTymIKSIfQjjCpl+VHn2fQ4E+VMgkQxxZV8jZkCW0einRnhLxt5ls6aqsSW4px1RNXim&#13;
+UVjOhj0ULA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fd859714-dc69-4692-866e-e7909cb29ca6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wuX60PLBqBOVe9spNl/2k89AV9GgJ+xb01bcUut5xaQiSEwab3ZP4Qqz3po4NtC+76rWwsKgk5AH&#13;
+EbFingVRIA==</DigestValue></Reference></SignedInfo><SignatureValue>GME7FIYFiz1Ijgojga7ssI0ksRF2IMrL1An1u9YxSsucCNvjXLzBHRmx5MJBfdVdtjDiY7L9mFhi&#13;
+B9N+v+bGtlaDI9hyb6/uJOGXycgpzl+QnjXhVOEHgjjIDVK8CcqMcPVSjIlpJsCulEFt0xRzyO2P&#13;
+RgRbzw5QPcN1kFAaA89hVG3gk31oJ3zdTXMUbyHJvixOTpEPFXFBoTQnWtlQEAihxsi+7ooW+Ydk&#13;
+Qy3pg+oMS2oh8m5zav6gOfB5vV59k+JemY8bvxI4ckprOM5rues5vu/rMYoPMYRfGQS1Khd+VRRu&#13;
+2q6s5KFiDr/DWP5E2hQwUhZ1XQLO3zJdJs91LA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fd859714-dc69-4692-866e-e7909cb29ca6" Target="#_dadf515c-956a-44cb-9c77-e47f98219853"><Timestamp>2023-07-07 08:24:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

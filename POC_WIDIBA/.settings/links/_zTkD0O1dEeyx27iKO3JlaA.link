@@ -1,0 +1,29 @@
+{
+  "itemId" : "_zTkD0O1dEeyx27iKO3JlaA",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_1X_ZsO1dEeyx27iKO3JlaA",
+    "parameterList" : [ {
+      "id" : "_eoY-GefzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Server"
+    }, {
+      "id" : "_eoY-GufzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Login"
+    }, {
+      "id" : "_eoY-G-fzEey7f-OLDClssw",
+      "name" : "DWH_dwh_AdditionalParams"
+    }, {
+      "id" : "_eoY-HOfzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Port"
+    }, {
+      "id" : "_eoY-HefzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Database"
+    }, {
+      "id" : "_eoY-HufzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Password"
+    }, {
+      "id" : "_eoY-H-fzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Schema"
+    } ]
+  } ]
+}

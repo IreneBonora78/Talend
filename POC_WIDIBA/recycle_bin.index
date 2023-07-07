@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>process/UC1_AZURE</deletedFolders>
+  <deletedFolders>process/Use_Case_Fact_Table/dwh_datmarts</deletedFolders>
+  <deletedFolders>process/Use_Case_Fact_Table/dwh_datmarts/marginalita</deletedFolders>
+  <deletedFolders>process/Use_Case_Fact_Table/dwh_datmarts/marginalita/WRK_DBA</deletedFolders>
+  <deletedItems id="_qLtMwBp_Ee6wX5MofH0jGQ" path="" type="PROCESS"/>
   <deletedItems id="_sJ1SUBA3Ee6FRLa-lK3dQA" path="UC1" type="PROCESS"/>
   <deletedItems id="_5R_bYBA3Ee6FRLa-lK3dQA" path="UC1_AZURE" type="PROCESS"/>
   <deletedItems id="_B0__oBo7Ee6nW_jdre2V3g" path="UC5" type="PROCESS"/>

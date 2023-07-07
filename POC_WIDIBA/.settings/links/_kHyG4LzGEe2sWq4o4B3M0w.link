@@ -1,0 +1,242 @@
+{
+  "itemId" : "_kHyG4LzGEe2sWq4o4B3M0w",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_F-bWUE-cEe2FAb9XXbwHiQ",
+    "parameterList" : [ {
+      "id" : "_eoY-G-fzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_AdditionalParams"
+    }, {
+      "id" : "_eoY-HefzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Database"
+    }, {
+      "id" : "_eoY-GufzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Login"
+    }, {
+      "id" : "_eoY-HufzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Password"
+    }, {
+      "id" : "_eoY-HOfzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Port"
+    }, {
+      "id" : "_eoY-H-fzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Schema"
+    }, {
+      "id" : "_eoY-GefzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Server"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_1X_ZsO1dEeyx27iKO3JlaA",
+    "parameterList" : [ {
+      "id" : "_eoY-G-fzEey7f-OLDClssw",
+      "name" : "DWH_dwh_AdditionalParams"
+    }, {
+      "id" : "_eoY-HefzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Database"
+    }, {
+      "id" : "_eoY-GufzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Login"
+    }, {
+      "id" : "_eoY-HufzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Password"
+    }, {
+      "id" : "_eoY-HOfzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Port"
+    }, {
+      "id" : "_eoY-H-fzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Schema"
+    }, {
+      "id" : "_eoY-GefzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Server"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_Eh2swAmiEe2ow9etymSfAg",
+    "parameterList" : [ {
+      "id" : "_eoY-GufzEey7f-OLDClssw",
+      "name" : "DWH_work_Login"
+    }, {
+      "id" : "_eoY-GefzEey7f-OLDClssw",
+      "name" : "DWH_work_Server"
+    }, {
+      "id" : "_eoY-H-fzEey7f-OLDClssw",
+      "name" : "DWH_work_Schema"
+    }, {
+      "id" : "_eoY-G-fzEey7f-OLDClssw",
+      "name" : "DWH_work_AdditionalParams"
+    }, {
+      "id" : "_eoY-HefzEey7f-OLDClssw",
+      "name" : "DWH_work_Database"
+    }, {
+      "id" : "_eoY-HufzEey7f-OLDClssw",
+      "name" : "DWH_work_Password"
+    }, {
+      "id" : "_eoY-HOfzEey7f-OLDClssw",
+      "name" : "DWH_work_Port"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_eoGDIOfzEey7f-OLDClssw",
+    "parameterList" : [ {
+      "id" : "_eoY-HufzEey7f-OLDClssw",
+      "name" : "DWH_stage_Password"
+    }, {
+      "id" : "_eoY-GufzEey7f-OLDClssw",
+      "name" : "DWH_stage_Login"
+    }, {
+      "id" : "_eoY-HefzEey7f-OLDClssw",
+      "name" : "DWH_stage_Database"
+    }, {
+      "id" : "_eoY-GefzEey7f-OLDClssw",
+      "name" : "DWH_stage_Server"
+    }, {
+      "id" : "_eoY-H-fzEey7f-OLDClssw",
+      "name" : "DWH_stage_Schema"
+    }, {
+      "id" : "_eoY-G-fzEey7f-OLDClssw",
+      "name" : "DWH_stage_AdditionalParams"
+    }, {
+      "id" : "_eoY-HOfzEey7f-OLDClssw",
+      "name" : "DWH_stage_Port"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_KmC7ELHbEe25peDxUzyBPA",
+    "parameterList" : [ {
+      "id" : "_KmQ9gbHbEe25peDxUzyBPA",
+      "name" : "data_report"
+    }, {
+      "id" : "_KmQ9g7HbEe25peDxUzyBPA",
+      "name" : "ultima_chiusura"
+    }, {
+      "id" : "_KmQ9grHbEe25peDxUzyBPA",
+      "name" : "data_inizio_periodo_report"
+    }, {
+      "id" : "_gX1FALHeEe25peDxUzyBPA",
+      "name" : "data_fine_periodo_report"
+    }, {
+      "id" : "_X_7fYLaTEe25peDxUzyBPA",
+      "name" : "tipo_report"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_F-bWUE-cEe2FAb9XXbwHiQ",
+    "parameterList" : [ {
+      "id" : "_eoY-E-fzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_AdditionalParams"
+    }, {
+      "id" : "_eoY-FefzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Database"
+    }, {
+      "id" : "_eoY-EufzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Login"
+    }, {
+      "id" : "_eoY-FufzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Password"
+    }, {
+      "id" : "_eoY-FOfzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Port"
+    }, {
+      "id" : "_eoY-F-fzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Schema"
+    }, {
+      "id" : "_eoY-EefzEey7f-OLDClssw",
+      "name" : "DWH_DATMARTS_MARG_Server"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_1X_ZsO1dEeyx27iKO3JlaA",
+    "parameterList" : [ {
+      "id" : "_eoY-E-fzEey7f-OLDClssw",
+      "name" : "DWH_dwh_AdditionalParams"
+    }, {
+      "id" : "_eoY-FefzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Database"
+    }, {
+      "id" : "_eoY-EufzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Login"
+    }, {
+      "id" : "_eoY-FufzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Password"
+    }, {
+      "id" : "_eoY-FOfzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Port"
+    }, {
+      "id" : "_eoY-F-fzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Schema"
+    }, {
+      "id" : "_eoY-EefzEey7f-OLDClssw",
+      "name" : "DWH_dwh_Server"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_Eh2swAmiEe2ow9etymSfAg",
+    "parameterList" : [ {
+      "id" : "_eoY-EufzEey7f-OLDClssw",
+      "name" : "DWH_work_Login"
+    }, {
+      "id" : "_eoY-EefzEey7f-OLDClssw",
+      "name" : "DWH_work_Server"
+    }, {
+      "id" : "_eoY-F-fzEey7f-OLDClssw",
+      "name" : "DWH_work_Schema"
+    }, {
+      "id" : "_eoY-E-fzEey7f-OLDClssw",
+      "name" : "DWH_work_AdditionalParams"
+    }, {
+      "id" : "_eoY-FefzEey7f-OLDClssw",
+      "name" : "DWH_work_Database"
+    }, {
+      "id" : "_eoY-FufzEey7f-OLDClssw",
+      "name" : "DWH_work_Password"
+    }, {
+      "id" : "_eoY-FOfzEey7f-OLDClssw",
+      "name" : "DWH_work_Port"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_eoGDIOfzEey7f-OLDClssw",
+    "parameterList" : [ {
+      "id" : "_eoY-FufzEey7f-OLDClssw",
+      "name" : "DWH_stage_Password"
+    }, {
+      "id" : "_eoY-EufzEey7f-OLDClssw",
+      "name" : "DWH_stage_Login"
+    }, {
+      "id" : "_eoY-FefzEey7f-OLDClssw",
+      "name" : "DWH_stage_Database"
+    }, {
+      "id" : "_eoY-EefzEey7f-OLDClssw",
+      "name" : "DWH_stage_Server"
+    }, {
+      "id" : "_eoY-F-fzEey7f-OLDClssw",
+      "name" : "DWH_stage_Schema"
+    }, {
+      "id" : "_eoY-E-fzEey7f-OLDClssw",
+      "name" : "DWH_stage_AdditionalParams"
+    }, {
+      "id" : "_eoY-FOfzEey7f-OLDClssw",
+      "name" : "DWH_stage_Port"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_KmC7ELHbEe25peDxUzyBPA",
+    "parameterList" : [ {
+      "id" : "_KmQ9gbHbEe25peDxUzyBPA",
+      "name" : "data_report"
+    }, {
+      "id" : "_KmQ9g7HbEe25peDxUzyBPA",
+      "name" : "ultima_chiusura"
+    }, {
+      "id" : "_KmQ9grHbEe25peDxUzyBPA",
+      "name" : "data_inizio_periodo_report"
+    }, {
+      "id" : "_gX1FALHeEe25peDxUzyBPA",
+      "name" : "data_fine_periodo_report"
+    }, {
+      "id" : "_X_7fYLaTEe25peDxUzyBPA",
+      "name" : "tipo_report"
+    } ]
+  } ]
+}
