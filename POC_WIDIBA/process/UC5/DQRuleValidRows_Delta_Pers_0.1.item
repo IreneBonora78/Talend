@@ -45,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:G7pRMl+JPxoDWclGKP1/jgyiAwj7nX0aUYRtPCVi"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QqwoT4f3g5DdhlNo6t2kwu2jNwJHELecKdFGbrup"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EufHsztICXbaBWmlEseaOoCLPVGsb6ZR52cXeTSq"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:G0/VTCPQrY+MJVogFOHLdhiI2+Ge4LaY+3G/RQXz"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -129,7 +129,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:U8t2v7rPUKMxrcQTRaViuXsW8B5RvzmdkwojyMAgsfo+wYVVa/cblhMI"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LGvdwLfjjc3sOA3PZQDw9iAPqntNS9Mi74VzMfGLXeDMY+GNFLbvvBAV"/>
     <elementParameter field="DBTABLE" name="TABLE" show="false" value="&quot;UC5&quot;"/>
     <elementParameter field="TEXT" name="WHERE_CLAUSE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DQRULES_LIST" show="false" value="UC5_Check_Bonifici_Ricavi"/>
@@ -139,7 +139,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#10;FROM&#9;UC5&#10;  WHERE (( delta_perc&gt; 3 ))&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
-    <elementParameter field="COLUMN_LIST" name="ANALYZED_COLUMN" show="false" value="k_id_tempo"/>
+    <elementParameter field="COLUMN_LIST" name="ANALYZED_COLUMN" show="false" value="mese"/>
     <elementParameter field="CHECK" name="CUSTOM_PATTERN" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="PATTERN_LIST" show="false" value=""/>
     <elementParameter field="TEXT" name="DQ_PATTERN" show="false" value="&quot;'[A-Z0-9._%-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,4}'&quot;"/>
@@ -149,20 +149,26 @@
     <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="k_id_tempo"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mese"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="delta"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sum_com"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sum_ret"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delta_perc"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBValidRows_1">
-      <column comment="" key="false" length="50" name="k_id_tempo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="delta" nullable="true" originalLength="3" pattern="" precision="3" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="mese" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="sum_com" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="sum_ret" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="delta_perc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="  &#10;context.Description = &quot; delta  &quot; +    input_row.delta.toString() + &quot;%&quot;   + &quot; nel giorno &quot; + input_row.k_id_tempo ;&#10;&#10;System.out.println(context.Description);&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="  &#10;context.Description = &quot; delta  &quot; +    input_row.delta_perc.toString() + &quot;%&quot;   + &quot; nel giorno &quot; + input_row.mese ;&#10;&#10;System.out.println(context.Description);&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -185,7 +191,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TfsXjfBINZ7V1jkRQ2ZYM5vI/EubJ4CDu+t5ERkRt1eq+2dpVaQAwvpn"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xlTs8+weAMYqPBy2l4m4jnYAxJ/o387RxT50VmP1gjpGnyNvxQoA3elM"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -312,13 +318,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8ed5caa4-5fc3-42fc-b0af-d60a6e65658e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W878yy3OHNvMA7VAMo9wOHBzmHZYM4RPrwDMtnFYbLaowjhSyONXj/PdWZvLaqSo744zb+wwIoQO&#13;
-C4kySBy9bA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7f2efd59-5fd7-4ae6-8b05-ac5db6ff188f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8gxoYKEM3vuKr8CRGbE8Vv2SFpggyKpb1js8dJgTMyxI3l384CRs9R221aycrdS9FH+cqL/fPawy&#13;
-Kvrq9ghElQ==</DigestValue></Reference></SignedInfo><SignatureValue>j8wkFuoFUtEJct59PziRKKg4OF0GiWf10Iev2TU+Q0YZLUHFzq/Ac63bEsug5V7HbP40CAHHBX5x&#13;
-7mZxqIkHrCz98O8p0TjxKO9WBIDNSHsDeBTgFmXCOOhAhStme0rNikMs838RRkX3S5czIXajdA2L&#13;
-pbMw26ZuGV78FdFIsBguWaEfPBQc++RnTq5LhXq/apBMzHTt1JbYV2sA4MzNefQoea5ceDdDdCHL&#13;
-4R6qAz1sG1DMi/7nVsEW7tHtNRAztUzr8JYFdEwo7L+yr+MGKKrWa5K6OsPtVBAF6Iy/tcqNTB34&#13;
-JaISLgVGlyJRTLhwRx292IymfyAZIN9ZdVtKKg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bfae90e6-7e20-480e-a31f-79217f748b1f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Pabkk3/h9vRi/BpV2BwlzlTWZkvAZ/+O9ZkTVh2VGpowNF84vdJj+enZmEydtpljrOZ9hi+ilDH7&#13;
+Ule0PArRzQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_20bff1f3-56c3-4a03-baa6-d3937d80a5b4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P9DI9xoANJTv4Zmt6iwGrfpdjfXxeSNoGXZJYtB/beWHvTnNu1l0zFDY1C9SV0A3m+3OEzxapztm&#13;
+i4BKyyRwsw==</DigestValue></Reference></SignedInfo><SignatureValue>XMbKs5gkOjEdhr82LK8SJu6QuR/SgEn27ffi6K0xOkw6VBZ7l3BYGNhPoDN2q6aiv8Ns9Fprwahu&#13;
+8nlsamfNdcNTNSQOcabqnR5wFbHQZIDWSs+ztAcqH+inZPv0E1Ri9/HsgfwvNxZUEaLndPWruxIF&#13;
+ijBv4vGaZET5F/gJ/mlHNW9lOkGZYix8uAILCtzCSfXN/ZjxK+Y+6/bh8AxpC7XyqcC1gDMEXofh&#13;
+CEPCX/fN7Gh014lSCUKmY4kLF9MiFvFP2oZMLBog1PlvGShnF7jG1KLLUNUGpTr5wv9asHDG5P2E&#13;
+Gk6xAJkczRuKcQ9DUCW+6Qy0ML1iSBzb3e4x/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -340,4 +346,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7f2efd59-5fd7-4ae6-8b05-ac5db6ff188f" Target="#_8ed5caa4-5fc3-42fc-b0af-d60a6e65658e"><Timestamp>2023-07-11 14:17:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_20bff1f3-56c3-4a03-baa6-d3937d80a5b4" Target="#_bfae90e6-7e20-480e-a31f-79217f748b1f"><Timestamp>2023-07-11 15:06:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
