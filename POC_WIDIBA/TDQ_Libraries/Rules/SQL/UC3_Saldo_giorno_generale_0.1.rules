@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
-  <dataquality.rules:WhereRule xmi:id="_Rjt08ArJEe6N7tCVjRneiQ" name="UC2_Saldo_giorno_generale" supplierDependency="_YSrNkAtIEe6SA7Nx7VOXHA" criticalityLevel="1" whereExpression="((delta >=  0.0020) or   (delta &lt;= - 0.0018)) and delta &lt;>100">
+  <dataquality.rules:WhereRule xmi:id="_Rjt08ArJEe6N7tCVjRneiQ" name="UC3_Saldo_giorno_generale" supplierDependency="_YSrNkAtIEe6SA7Nx7VOXHA" criticalityLevel="1" whereExpression="((delta >=  0.0020) or   (delta &lt;= - 0.0018)) and delta &lt;>100">
     <taggedValue xmi:id="_Rjt08QrJEe6N7tCVjRneiQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_Rjt08grJEe6N7tCVjRneiQ" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
     <taggedValue xmi:id="_Rjt08wrJEe6N7tCVjRneiQ" tag="Purpose" value=""/>

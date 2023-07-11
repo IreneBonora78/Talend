@@ -513,4 +513,15 @@
     "version" : "Latest",
     "type" : "rule"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_xYxQQBclEe60qfQ1jCIUwA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M7RdABAVEe6Ru87eRWaZkQ",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
 } ]

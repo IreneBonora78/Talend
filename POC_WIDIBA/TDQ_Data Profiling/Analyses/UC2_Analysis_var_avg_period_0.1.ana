@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:dataquality.rules="http://dataquality.rules" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_iAjeQRZjEe6og_IXNOLUYw" name="UC2_Analysis_var_avg_period" creationDate="2023-06-13T11:29:19.960+0200" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Azure_x_Poc_0.1.item#_rHAP8hZkEe6og_IXNOLUYw"/>
+    <clientDependency href="../../TDQ_Libraries/Rules/SQL/UC2_CHECK_var_avg_period_0.1.rules#_ymQFMBZjEe6og_IXNOLUYw"/>
     <taggedValue xmi:id="_iAjeQhZjEe6og_IXNOLUYw" tag="Status" value="development"/>
     <taggedValue xmi:id="_iAjeQxZjEe6og_IXNOLUYw" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
     <taggedValue xmi:id="_iAjeRBZjEe6og_IXNOLUYw" tag="Purpose" value=""/>
@@ -8,9 +10,37 @@
     <taggedValue xmi:id="_iAjeRhZjEe6og_IXNOLUYw" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_iAjeRxZjEe6og_IXNOLUYw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
     <taggedValue xmi:id="_iAjeSBZjEe6og_IXNOLUYw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
-    <context xmi:id="_iAjeSRZjEe6og_IXNOLUYw"/>
+    <context xmi:id="_iAjeSRZjEe6og_IXNOLUYw">
+      <connection href="../../metadata/connections/Azure_x_Poc_0.1.item#_z89v4BAVEe6Ru87eRWaZkQ"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj2R_4Ee6Ic98yRzN9OQ"/>
+    </context>
     <results xmi:id="_iAjeShZjEe6og_IXNOLUYw">
-      <resultMetadata xmi:id="_iAjeSxZjEe6og_IXNOLUYw" executionDate="2023-06-29T12:06:57.482+0200" executionDuration="1066" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="4"/>
+      <resultMetadata xmi:id="_iAjeSxZjEe6og_IXNOLUYw" executionDate="2023-07-11T16:39:29.630+0200" executionDuration="553" message="" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="5"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_fXt_IB_4Ee6Ic98yRzN9OQ" count="59" computed="true">
+        <parameters xmi:id="_fY8HIB_4Ee6Ic98yRzN9OQ"/>
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj2R_4Ee6Ic98yRzN9OQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vhOZUB_4Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &quot;Widiba-poc&quot;.&quot;dbo&quot;.&quot;UC2&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_vhA98B_4Ee6Ic98yRzN9OQ" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_vhA98R_4Ee6Ic98yRzN9OQ" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_vhA98h_4Ee6Ic98yRzN9OQ" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_vhA98x_4Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_tnepcB_4Ee6Ic98yRzN9OQ" count="59" computed="true" userCount="18">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj2R_4Ee6Ic98yRzN9OQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/UC2_CHECK_var_avg_period_0.1.rules#_mPFwsRZiEe6og_IXNOLUYw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vhOZUR_4Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &quot;Widiba-poc&quot;.&quot;dbo&quot;.&quot;UC2&quot;   WHERE (var_avg_period>20&#xD;&#xA;or&#xD;&#xA;var_avg_period&lt;-20)" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_vhISsB_4Ee6Ic98yRzN9OQ" name="UC2_CHECK_var_avg_period" criticalityLevel="1" whereExpression="var_avg_period>20&#xD;&#xA;or&#xD;&#xA;var_avg_period&lt;-20">
+          <taggedValue xmi:id="_vhISsR_4Ee6Ic98yRzN9OQ" tag="Status" value="development"/>
+          <taggedValue xmi:id="_vhISsh_4Ee6Ic98yRzN9OQ" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+          <taggedValue xmi:id="_vhISsx_4Ee6Ic98yRzN9OQ" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_vhIStB_4Ee6Ic98yRzN9OQ" tag="Description" value=""/>
+          <taggedValue xmi:id="_vhIStR_4Ee6Ic98yRzN9OQ" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_vhISth_4Ee6Ic98yRzN9OQ" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_vhIStx_4Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
     </results>
     <parameters xmi:id="_iAjeXRZjEe6og_IXNOLUYw" dataFilter="_iAjeXxZjEe6og_IXNOLUYw" analysisType="Table Analysis"/>
     <contextType xmi:id="_iAjeXhZjEe6og_IXNOLUYw" confirmationNeeded="false" name="Default"/>
