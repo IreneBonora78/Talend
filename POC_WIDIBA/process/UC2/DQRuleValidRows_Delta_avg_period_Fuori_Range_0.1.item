@@ -45,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:55C3ZbJnEb4PR6QqfF8RjSY/d/9lhWUyCdnQWJaM"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Fs/s0ES4hbYmufcPGnhQheRVkyFLqeGRkT+rlgti"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:f9MvDn1vgLvu1aNf7dNXMCzYpcedhzKxFIRUlgH9"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fO8W0KdNV7MGCG16nqhB3Ds3GJWiT0kD4Gn0ScHh"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -118,16 +118,18 @@
   <node componentName="tMSSqlValidRows" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBValidRows_1"/>
     <elementParameter field="CLOSED_LIST" name="VALIDATION_TYPE" value="DQ_RULE"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_M7RdABAVEe6Ru87eRWaZkQ"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_Poc&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IW+dSWm36BAqJ1oF2re46mXubpDq0xvMQ3xehRkEMwItO/T0azE15F5g"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Oqwt347FiuQI5NJzVC8SsB903G3TK2U5a13QPvLVifLufmT8F+NQA4gg"/>
     <elementParameter field="DBTABLE" name="TABLE" show="false" value="&quot;UC2&quot;"/>
     <elementParameter field="TEXT" name="WHERE_CLAUSE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DQRULES_LIST" show="false" value="UC2_CHECK_var_avg_period"/>
@@ -135,7 +137,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot;.\&quot;q_recs\&quot;,&#10;&#9;&#9;\&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot;.\&quot;d_insert\&quot;,&#10;&#9;&#9;\&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot;.\&quot;avg_period\&quot;,&#10;&#9;&#9;\&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot;.\&quot;avg_day_week\&quot;,&#10;&#9;&#9;\&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot;.\&quot;var_avg_period\&quot;,&#10;&#9;&#9;\&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot;.\&quot;var_avg_week\&quot;&#10;FROM&#9;\&quot;Widiba_Poc\&quot;.\&quot;dbo\&quot;.\&quot;UC2\&quot; &#10;  WHERE (( var_avg_period&gt;20&#13;&#10;or&#13;&#10;var_avg_period&lt;-20 ))&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#10;FROM&#9;UC2&#10;  WHERE (( var_avg_period&gt;20&#13;&#10;or&#13;&#10;var_avg_period&lt;-20 ))&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="COLUMN_LIST" name="ANALYZED_COLUMN" show="false" value="d_insert"/>
     <elementParameter field="CHECK" name="CUSTOM_PATTERN" show="false" value="false"/>
@@ -230,13 +232,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_M7RdABAVEe6Ru87eRWaZkQ"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_Poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XJFz4uuuDGDH6YRIEN4bAB9LQFjrCTYTuUtu/zvBasX6SN8K9NcvVYoI"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:J1r0LxaRpwInm44WrHEFP0xWd+yPljH6pe011eV/Qa5meqOPMrJNCytL"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -320,13 +322,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;128"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_784f4da5-47d5-4ece-84f2-6d538cc85815"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>m1rTgHsnDP4Af/CGN457v6zHMi0+QUEkiWpeCKzK5xqnQEHz/UiFuSbM80a8dBKdGBxClBr4Lpyy&#13;
-RMoVqmUbUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4ad83495-b4b5-49cd-aec5-ed2ab3f92c26"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>C3xmgYciHQ1NqdxG+1ny1EHtlz+7lGozVzPtIXmoqTwlC0uAFGCFphBLEj7lsTwjqdE9gLJmtoXw&#13;
-FT1GMGCu1A==</DigestValue></Reference></SignedInfo><SignatureValue>V3iyihZ8bABh5YONzmbjux/Weh162GntPrROBjn+UEnadT5c+NwSVIviHEDGRPhMkh+9J/QlCvQ2&#13;
-ezY5l/MX/HOMCBGdycUeB+qe4IJdjKAwkkP7FlqL4n1V0d9EWNdMi7tJv2bIIbqJqoWHTLMfvHfG&#13;
-/La7vpAZouKmPd79+485mbEyucOP9wfISJ5h/QtTRYniYvW6P8Xcmyz8LUZKPFiFBtt+7UtZCbiO&#13;
-SP0s5E91ztRmjC/1WKV5IPrS5j+aCRIAt8Voz7IvRXsovzHpNM4NJUkSpqjHSaGvEYw5NarRy0F/&#13;
-Lv65msDenhu0deVKjZdoTx8egL+E63yP+Q+5sw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ee813882-74bb-4e83-8b2a-d933a6fd75f0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W4AidUwV8VP416aEQFmei6kHrelVA3sVFZd6Xg9ViUs+6SmAqNF7jhsPVajQEZK6/JspVprsN/rX&#13;
+GiN613oy+g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_376dbe76-7695-4560-a175-2ead92dc0911"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5YbJ+CUOtd5eYGO7H8HNiPeQSTs+uPtODV3SI8ckgC96D2BCf6ZpZNfVw/PEo2bHblB51Rru+QIR&#13;
+G5mhWGtYNw==</DigestValue></Reference></SignedInfo><SignatureValue>EB4lEnaOiqgUEfZwGEIfozIFKmCDakfEUrO18x1af9fh4q7Oc1D29smQ5QHIm7yVNBoBs6/LLZS7&#13;
+pTG1WHBN/dFTL9Glpu73Va0T6xdZifqNdmLiLie/lztqt8wkY6rwbKAAUHCNLquYUUsqCdpKlvS6&#13;
+9R5itCeqeSpsEavFomTWB4s2etTUCgos+Evq55BGtjyYFaZG/Vv+xdowyBlT26XsJwB/5YyVVc5N&#13;
+l1isU9SAiAHyiUg4FGqoBzXe+snZoba39XYSw3BDCoGD6MAEgf7BIzQXMXnCW1+N2CDgCpOfdqcn&#13;
+56D/kQwN+Dk39GNzvMYzvggOLbqiAOasYfzODQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -348,4 +350,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4ad83495-b4b5-49cd-aec5-ed2ab3f92c26" Target="#_784f4da5-47d5-4ece-84f2-6d538cc85815"><Timestamp>2023-06-29 10:36:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_376dbe76-7695-4560-a175-2ead92dc0911" Target="#_ee813882-74bb-4e83-8b2a-d933a6fd75f0"><Timestamp>2023-07-11 12:55:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

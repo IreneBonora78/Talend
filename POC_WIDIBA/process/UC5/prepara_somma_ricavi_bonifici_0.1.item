@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:2PKtGaNFrL/l124g3sURsz2ah4lC9qvZ4vhX8jWN"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:B4kIJZ5KWd6KgT/iCpSlWNhyfeYqheLEIoTbklFe"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lfdBzvNUL2zJaO15VNHp8TCZ4YGLC6ECLOX+qpTR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yL6cXWSonm9df9pCikc356zjLNfLl+fF/+A1g6h9"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,13 +124,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;poc_wibida&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GDA3Grm3duJ2svpU3mybD5JDlBrk1jDqBIwUZI08"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+tr5+lOMLxEYys4G0eEHn5pv/hvsdhuGo8EXB4fH"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ricavi_bonifici&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;with ricavi as&#13;&#10;(select MONTH(k_id_tempo) as mese,   sum(convert(real, TRY_CONVERT(nvarchar,replace(i_movimento_rettificato,',','.'))))  as sum_ret&#13;&#10;from [dbo].[POC_5_f_cdg_costiricavi_202306011447]&#13;&#10;group by MONTH(k_id_tempo)&#13;&#10;),&#13;&#10;bonifici as (select MONTH(k_id_tempo) as mese,   sum(convert(real, TRY_CONVERT(nvarchar,replace([i_commissioni_instant] ,',','.'))))  as sum_com&#13;&#10;from  [dbo].[POC_5_pf_bonifici_202306011456] where n_tipo_bonifico='Instant'&#13;&#10;group by MONTH(k_id_tempo)&#13;&#10;)&#13;&#10;select bonifici.mese,&#13;&#10;&#9;   bonifici.sum_com,&#13;&#10;&#9;   ricavi.sum_ret,&#9;  ROUND ( (( bonifici.sum_com-   ricavi.sum_ret)/   ricavi.sum_ret) *100,3) as delta_pers&#13;&#10;from ricavi left outer join bonifici on bonifici.mese=ricavi.mese&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;with ricavi as&#13;&#10;(select MONTH(k_id_tempo) as mese,   sum(convert(real, TRY_CONVERT(nvarchar,replace(i_movimento_rettificato,',','.'))))  as sum_ret&#13;&#10;from [dbo].[POC_5_f_cdg_costiricavi_202306011447]&#13;&#10;group by MONTH(k_id_tempo)&#13;&#10;),&#13;&#10;bonifici as (select MONTH(k_id_tempo) as mese,   sum(convert(real, TRY_CONVERT(nvarchar,replace([i_commissioni_instant] ,',','.'))))  as sum_com&#13;&#10;from  [dbo].[POC_5_pf_bonifici_202306011456] where n_tipo_bonifico='Instant'&#13;&#10;group by MONTH(k_id_tempo)&#13;&#10;)&#13;&#10;select bonifici.mese,&#13;&#10;&#9;   bonifici.sum_com,&#13;&#10;&#9;   ricavi.sum_ret,&#9;  ROUND ( (( bonifici.sum_com-   ricavi.sum_ret)/   ricavi.sum_ret) *100,3) as delta_perc&#13;&#10;from ricavi left outer join bonifici on bonifici.mese=ricavi.mese&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -147,7 +147,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="sum_ret"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="delta_pers"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delta_perc"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
@@ -158,21 +158,23 @@
       <column comment="" defaultValue="" key="false" length="10" name="mese" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="sum_com" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="sum_ret" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="delta_pers" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="delta_perc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_M7RdABAVEe6Ru87eRWaZkQ"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_Poc&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5cBF16tDvS5/oRnEBK2YZQtDcvMJ57wu7ZbqQNZmKmru/5nhNFQPmJ0w"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qPx06W1tGPssX3K3U3M+iTLgmKlKPlFdWsG6+h9SDfrHj7DW5zicFtUS"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;UC5&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -212,7 +214,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="delta_pers"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delta_perc"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -231,13 +233,13 @@
       <column comment="" defaultValue="" key="false" length="10" name="mese" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="sum_com" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="sum_ret" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="delta_pers" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="delta_perc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" defaultValue="" key="false" length="10" name="mese" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="sum_com" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="sum_ret" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="delta_pers" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="delta_perc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -251,13 +253,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_M7RdABAVEe6Ru87eRWaZkQ"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_Poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5tgLjTTp6Tytj0roi8oO3kv46o4E80MCYmiwdnJtLqzqjSff/3ffaSH7"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0GOcxE0c8O728RtAqC8Cz1YirFPWbNp/zvvQu2d5cX55BpgaUPUUzTh0"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -337,13 +339,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c2c46910-bfc4-4854-a572-7982144e106e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yYc71hCmVPvdIAbn4kVuuEuA/EOXUwE2sxnH80Rca8RDRR6zJEcu+qV2saAhu7azz2PNmW/YsUV+&#13;
-F1l57faLSw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d5643c81-4bce-45c5-8c1e-abbae2373849"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FxW3NZk1uuKjS0UFVrz7875IAztwniaZMWpp4qwj41Nsn4XW8gunBNAte6WnA2Ky1R4h+5yuCn+f&#13;
-kn3N/kOkzQ==</DigestValue></Reference></SignedInfo><SignatureValue>nEJUU6XdWu82y2DQPBOQT5uWd+g90HpMfarSb2u3Fkb5ISJoUVooyEMG8cTGjc3O6vMc7C7/m0Zy&#13;
-o+vRfrn2UgBwwPpN1TXuWyh6Zg4yTY2PtVDeRQawAu54eoDVNOkhFHsUydC1Cgudn5O4a5rMgDJn&#13;
-Qzdb3+i9md4hSJRTb0e1oMUseWzFJ6TMxhHT6RPRdhAXIoSGWjyJx47bpnrMpxYTgVFKWuLhgt73&#13;
-uk3/vYXdzOjpX8pHFA3HIggg7YgVP6FuldF7rYBxrmL0G4iri8PkVBYByXLxOtTDbSZDlo5jVs0n&#13;
-QskRH9dpzRg+iZRl/ZiBMQSDFf8M8qjgfUt01Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_016a8be4-63fa-47b1-8246-c9858bb8678f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2HCFYxmWiPfPuggdw1rome6yZVgV11TzXBPBQkSFtQ2jDGawuf3mRmVmdL1cthTC31spbqWZJ5Z3&#13;
+ZFF5htXjKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d035298c-156a-450d-ae9e-b5fb2da3bd3e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6CTldblxHoMEVQY2wTvL/ZloirbD3emveRf/OdR843bveWHyUE9x5MQoDxQAsClqsTjIgeUu+YkK&#13;
+XfbPqMWyfA==</DigestValue></Reference></SignedInfo><SignatureValue>Kw+UQiMSL1mRn74POIcyqPZIiIBip35uhoOAA7S4sOdUT9rlpV2REn3kdJpGNxRNTF2vUSILvDB5&#13;
+vX5dhA28tWtYzWFCANrnExczHs3BSua06+LTGTSiI3PzARk+ixwAlYhoLc2pPzD29TyV0wGJFoOm&#13;
+Pa6EYXzv8eumbyW9tOr20w6cbXFWpw9QqG6x1k1zFmr2Zu4bzf7mYOPn5HUEaNmr1r2FPD9w0N7c&#13;
+GgBFZTmXwmoT+S8felKSMmay84ABhMAHfFZi9nU1EzXxW21fdSq5XnYjHiliI6a9e+Vu0bmLOX/r&#13;
+Ar/N+Ufl91U+k5Zoc1zFsmRNg4AD1Z5cfruZqQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -365,4 +367,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d5643c81-4bce-45c5-8c1e-abbae2373849" Target="#_c2c46910-bfc4-4854-a572-7982144e106e"><Timestamp>2023-06-29 12:47:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d035298c-156a-450d-ae9e-b5fb2da3bd3e" Target="#_016a8be4-63fa-47b1-8246-c9858bb8678f"><Timestamp>2023-07-11 12:59:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
