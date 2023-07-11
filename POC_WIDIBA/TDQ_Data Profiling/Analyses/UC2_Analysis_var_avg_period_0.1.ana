@@ -15,7 +15,7 @@
       <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj2R_4Ee6Ic98yRzN9OQ"/>
     </context>
     <results xmi:id="_iAjeShZjEe6og_IXNOLUYw">
-      <resultMetadata xmi:id="_iAjeSxZjEe6og_IXNOLUYw" executionDate="2023-07-11T16:39:29.630+0200" executionDuration="553" message="" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="5"/>
+      <resultMetadata xmi:id="_iAjeSxZjEe6og_IXNOLUYw" executionDate="2023-07-11T17:13:46.624+0200" executionDuration="522" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="6"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_fXt_IB_4Ee6Ic98yRzN9OQ" count="59" computed="true">
         <parameters xmi:id="_fY8HIB_4Ee6Ic98yRzN9OQ"/>
         <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj2R_4Ee6Ic98yRzN9OQ"/>
