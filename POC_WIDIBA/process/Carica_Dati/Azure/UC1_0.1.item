@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:SB6kvrmUs+QXeE2BHblFMxx4JgBgxtgkhJlIcoFc"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:dBH3f4LPLjUInesj1PTYwZZ631aiFRbOeUkG71uB"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CUSA9o7NgQrc1qfeq+4Kr10z4ykSlE9xyZENL4Pp"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:b0zR69MiCvejndDaYkfFYgKkxjUTxOXcn+mZ8urU"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -484,13 +484,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_POC&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sK45EwPN2wQTAvtTCXFNo/PlHTPonHdmXX6yJYPKFNazpTcb5NNORhSv"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TLsgyaav9HbEX4I465gUWpIX3S97/F1DS8dbqWzJ7YwwmULA5RiMaITH"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;POC1_oanag_a_bol&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1590,13 +1590,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_POC&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aqKTBjRWbW7qxZm2pcmzm6FJu4KJMMPnZUa3zn8iBBGJUUh74zCpIZXp"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NoQRYGNhV4/xvTRu5j0J5rKWmDy9kqlG5TSHdAC4gsfui9RQMwNW9QFg"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;POC1_oanag_a_core&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2255,13 +2255,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_POC&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:n8iKnQSfUBI9ObkNn02aQwT16HWEsWDUVxNuiPTfs/M+u33oUknujo1m"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wYH4HNVTH91eQnWSpbwpkzMwi0IK6Yf4qsf8CHWjxasVvbh/1zSi2eFK"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;POC1_d_cliente&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2524,13 +2524,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_POC&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yaUeueHzPH9EDkuYkIb7VLuQC7eYbjTxOzPaKo/SPD6OFa+u0dCO0wWB"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8PkyJVkS3vW0rv/J+xAHqtXGWc1iaAne9XbcDSHXWc+fSV+8hNY9qSTo"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;POC1_d_cliente&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2647,13 +2647,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_M7RdABAVEe6Ru87eRWaZkQ"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;sql-srv-widiba-poc.database.windows.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;sqlserver-test-talend.database.windows.net&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba-poc&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Widiba_POC&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sqlserver-admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:120/CRUIAGCkByjeQijTYRfr/QciMPi0YFDfwbukTEcUxCVYWHPMlQbk"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7sTbI7qIsYuUmrYg0HXsIs/w1J8+08nn4Hy3pExI2OEgc9JrYx9W3JT7"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -2781,13 +2781,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fe14a74d-99f9-4359-a525-cf9e05493e56"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>efw4W9wZ7EusEElOOB0XlhbYSwhm0FL50NpBq915A1Xmx83MTi3fIHg6z6FXhkzJhGpi4YPbfcls&#13;
-+152bVo31A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98121713-34e5-468c-98bc-de10cecb7ef2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FwAdF4WzgOC0GIUBCl9iNpilZ+bKi+B38mr46uIfF4B8uqnOywZZAJdKIuY9laSbLUSzqV0PrY+x&#13;
-E1s6vxFN2A==</DigestValue></Reference></SignedInfo><SignatureValue>DLmtrr5XinydAJ7Xz6+I+tuARda7vatm13Qt72ix7F4qJrwtAS3hIEYzrylYJkssqzSLp3KjbQYa&#13;
-SZy5WSsN4XfBGd7FCxV5AHGeHNFYSwj9GTyboQup8/ia9htRbHk7FNxTSbvPR8wQ3tyk3Y7tEfmS&#13;
-x5BRSC+v9gyZJ/w2z367a1myT2joqFB6rAQAEqtsJYMHY2v+SgU0I8Dr7hZzZ91bPfEpt5WJlywP&#13;
-sYsW5+mTafLKvhtCBhCrfTTOH5dGMWJaLxCTGiRYMMF5eFjMv93f8YAMg6t7ZJ4p7VUB2qAikQeC&#13;
-KMqGd6s3maU77ybdg+m0ApN64ohlaFdJrphT5w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_98c4304a-fe93-46f1-b0d4-f7bf42a6b95f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hk7vVT7AWegqhgrBLgUj5uV873X/wOzPZekOOsXS6fDlcnEjOnCwWx1oHK3kjYu4OijtcjRAveF5&#13;
+v0V1UIhzTA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_17232282-3030-4ce0-b2d2-4bd099d17528"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jkfThcMiiW++au6t4289WFTJaQnqJ6EwVTkxMnw1j/MMaTeCeUUyWdcL7d3xbAtXkHWU0xf482Ef&#13;
+kYZoPlAczw==</DigestValue></Reference></SignedInfo><SignatureValue>NArdWsggYCLhxqc0cPmLyLGeAcZHRRqjusBMhe1MwoH+46T3f9FqAZ+Evpi+Gk1rmA+cklbChG2W&#13;
+OMHspBqmt3NFYxR4iqdiNFKIkM3J+ZUd6WZfNqu/M7UNgO4Hb2C6jj5RLSzrVKWsdX5XqT9SrQtq&#13;
+evarFE7OOQk6qLrDuy6WxobRSttO1sNkGRbAQIi12Xgfl0ueMKBs2rPwMYmORRjDMdsUCDsoYQlv&#13;
+bWuUeL9RtgYTzJcTY43MN+y55hhCkvkcsmpygvy5BYqv/vN+AdQfqADBj8gfme6El1NjzL+WXeNT&#13;
+9XlNxx1RZ1731UaV/a1p20eRzrIbG+aA68g9mw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2809,4 +2809,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98121713-34e5-468c-98bc-de10cecb7ef2" Target="#_fe14a74d-99f9-4359-a525-cf9e05493e56"><Timestamp>2023-07-11 12:27:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_17232282-3030-4ce0-b2d2-4bd099d17528" Target="#_98c4304a-fe93-46f1-b0d4-f7bf42a6b95f"><Timestamp>2023-07-25 09:42:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

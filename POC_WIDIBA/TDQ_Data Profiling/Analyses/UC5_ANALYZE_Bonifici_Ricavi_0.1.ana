@@ -11,32 +11,32 @@
     <taggedValue xmi:id="_aT-DuBZ8Ee6og_IXNOLUYw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <context xmi:id="_aT-DuRZ8Ee6og_IXNOLUYw">
       <connection href="../../metadata/connections/Azure_x_Poc_0.1.item#_z89v4BAVEe6Ru87eRWaZkQ"/>
-      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj3B_4Ee6Ic98yRzN9OQ"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_WeuW0SrQEe6jWb3T5l5hbg"/>
     </context>
     <results xmi:id="_aT-DuhZ8Ee6og_IXNOLUYw">
-      <resultMetadata xmi:id="_aT-DuxZ8Ee6og_IXNOLUYw" executionDate="2023-07-11T16:45:48.244+0200" executionDuration="443" message="" executionNumber="15" lastRunOk="true" lastExecutionNumberOk="8"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_luLVcB_5Ee6Ic98yRzN9OQ" count="4" computed="true">
-        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj3B_4Ee6Ic98yRzN9OQ"/>
+      <resultMetadata xmi:id="_aT-DuxZ8Ee6og_IXNOLUYw" executionDate="2023-07-25T11:52:08.585+0200" executionDuration="542" message="" executionNumber="16" lastRunOk="true" lastExecutionNumberOk="9"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_6oezMCrQEe6jWb3T5l5hbg" count="4" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_WeuW0SrQEe6jWb3T5l5hbg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_l6CnMB_5Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &quot;Widiba-poc&quot;.&quot;dbo&quot;.&quot;UC5&quot; " language="Microsoft SQL Server"/>
-        <builtInIndicatorDefinition xmi:id="_l56rYB_5Ee6Ic98yRzN9OQ" name="Row Count" label="Row Count">
-          <taggedValue xmi:id="_l56rYR_5Ee6Ic98yRzN9OQ" tag="Description" value="counts the number of rows"/>
-          <taggedValue xmi:id="_l56rYh_5Ee6Ic98yRzN9OQ" tag="Purpose" value="evaluates the number of records"/>
-          <sqlGenericExpression xmi:id="_l56rYx_5Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_62RXkCrQEe6jWb3T5l5hbg" body="SELECT COUNT(*) FROM &quot;Widiba_POC&quot;.&quot;dbo&quot;.&quot;UC5&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_62L4ACrQEe6jWb3T5l5hbg" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_62L4ASrQEe6jWb3T5l5hbg" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_62L4AirQEe6jWb3T5l5hbg" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_62L4AyrQEe6jWb3T5l5hbg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_luLVcR_5Ee6Ic98yRzN9OQ" count="4" computed="true" userCount="4">
-        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_XYMj3B_4Ee6Ic98yRzN9OQ"/>
+      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_6oezMSrQEe6jWb3T5l5hbg" count="4" computed="true" userCount="4">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Azure_x_Poc_0.1.item#_WeuW0SrQEe6jWb3T5l5hbg"/>
         <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/UC5_Check_Bonifici_Ricavi_0.1.rules#_TaeRwBZ7Ee6og_IXNOLUYw"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_l6CnMR_5Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &quot;Widiba-poc&quot;.&quot;dbo&quot;.&quot;UC5&quot;   WHERE (delta_perc> 3)" language="Microsoft SQL Server"/>
-        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_l6BZEB_5Ee6Ic98yRzN9OQ" name="UC5_Check_Bonifici_Ricavi" criticalityLevel="1" whereExpression="delta_perc> 3">
-          <taggedValue xmi:id="_l6BZER_5Ee6Ic98yRzN9OQ" tag="Status" value="development"/>
-          <taggedValue xmi:id="_l6BZEh_5Ee6Ic98yRzN9OQ" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
-          <taggedValue xmi:id="_l6BZEx_5Ee6Ic98yRzN9OQ" tag="Purpose" value=""/>
-          <taggedValue xmi:id="_l6BZFB_5Ee6Ic98yRzN9OQ" tag="Description" value=""/>
-          <taggedValue xmi:id="_l6BZFR_5Ee6Ic98yRzN9OQ" tag="Version" value="0.1"/>
-          <taggedValue xmi:id="_l6BZFh_5Ee6Ic98yRzN9OQ" tag="Validation_Status" value="true"/>
-          <sqlGenericExpression xmi:id="_l6BZFx_5Ee6Ic98yRzN9OQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_62RXkSrQEe6jWb3T5l5hbg" body="SELECT COUNT(*) FROM &quot;Widiba_POC&quot;.&quot;dbo&quot;.&quot;UC5&quot;   WHERE (delta_perc> 3)" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_62PiYCrQEe6jWb3T5l5hbg" name="UC5_Check_Bonifici_Ricavi" criticalityLevel="1" whereExpression="delta_perc> 3">
+          <taggedValue xmi:id="_62PiYSrQEe6jWb3T5l5hbg" tag="Status" value="development"/>
+          <taggedValue xmi:id="_62PiYirQEe6jWb3T5l5hbg" tag="Author" value="irene.bonora@nfrsergiofracconhorsait"/>
+          <taggedValue xmi:id="_62PiYyrQEe6jWb3T5l5hbg" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_62PiZCrQEe6jWb3T5l5hbg" tag="Description" value=""/>
+          <taggedValue xmi:id="_62PiZSrQEe6jWb3T5l5hbg" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_62PiZirQEe6jWb3T5l5hbg" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_62PiZyrQEe6jWb3T5l5hbg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
     </results>
